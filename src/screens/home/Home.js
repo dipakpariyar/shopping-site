@@ -5,6 +5,7 @@ import Highlights from '../../common/highlights/Highlights';
 import Slider from '../slider/Slider';
 import Popularbrand from '../popular-brand/Popularbrand';
 // hlw this for test
+// this comment from bhagya
 export default function Home() {
   return (
     <div className="home_div">
