@@ -1,0 +1,36 @@
+.item1_div{
+  height: 40vh;
+  width: 29vw;
+  margin-top: 2vh;
+  margin: 10px;
+  transition: width 1s, height 1s, transform 1s;
+  // margin-left: 2vh;
+  // margin-bottom: 2vh;
+  // border: 2px solid red;
+  // background-color: blue;
+  &:hover{
+    // transform: translateX(-20px);
+    // height: 50vh;
+    // width: 40vw;
+    
+    // transform: rotate(360deg);
+    // zoom: 100%;
+    transform: translate(-10%,-5%,);
+    // transform: translate(10%,5%);
+  }
+
+  .item1_div__img{
+    height: 100%;
+    width: 100%;
+    border-radius: 5%;
+  }
+}
+
+
+@media screen and (max-width:360px){
+ .item1_div{
+   height: 30vh;
+   width: 82vw;
+ }
+ 
+}

@@ -1,0 +1,130 @@
+.footer_div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  // align-items: center;
+  .about_contact{
+    color: white;
+    height: 10vh;
+    width: 20vw;
+    outline: none;
+    border: none;
+    // border: 1px solid red;
+    align-items:center;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    
+    li{
+      list-style-type: none;
+      a{
+        text-decoration: none; 
+      }
+      
+    }
+
+  }
+
+   .social_media{
+        display: flex;
+        flex-direction: row-reverse; 
+        align-items: center;
+        
+        
+        margin-right: 10px;
+        height: 5vh;
+        width: 20vw;
+        
+        
+        .fb_div{
+          height: 3vh;
+          width: 2vw;
+          margin: 1.5px;
+          .fb_div__icon{
+            height: 100%;
+            width: 100%;
+            border-radius: 4px;
+          }
+
+         
+
+        }
+        .tw_div{
+          @extend .fb_div ;
+          // border: 1px solid rgb(13, 226, 109);
+         
+          
+          .tw_div__icon{
+            height: 100%;
+            width: 100%;
+            border-radius: 5px;
+          }
+          
+        }
+
+        .google_div{
+          @extend .fb_div ;
+         
+          // border: 1px solid rgb(201, 20, 20);
+          
+          .google_div__icon{
+            height: 100%;
+            width: 100%;
+            border-radius: 5px;
+          }
+         
+        }
+        .insta_div{
+          @extend .fb_div;
+          
+         
+          .insta_div__icon{
+            height: 100%;
+            width: 100%;
+            border-radius: 5px;
+            
+          }
+          // border: 1px solid yellow;
+
+          
+        }
+        
+      }
+    
+  
+  
+}
+
+@media screen and (max-width:360px){
+  .footer_div .social_media {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-right: 10px;
+    height: 5vh;
+    width: 25vw;
+}
+  .footer_div .social_media .fb_div, 
+.footer_div .social_media .insta_div, 
+.footer_div .social_media .google_div, 
+.footer_div .social_media .tw_div {
+  height: 3vh;
+  width: 5vw;
+  margin: 1.5px;
+
+}
+
+.footer_div .about_contact {
+  color: white;
+  height: 10vh;
+  width: 56vw;
+  outline: none;
+  border: none;
+  align-items: center;
+  display: flex;
+  margin-left: 5px;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+}
