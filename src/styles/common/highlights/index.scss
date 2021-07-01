@@ -16,8 +16,9 @@
     //  border: 2px solid black;
    }
     .first_div{
-      // display: flex;
+      display: flex;
       // align-items: center;
+      justify-content: center;
       height: 42vh;
     
     width: 100%;
@@ -27,7 +28,7 @@
     .first_card{
       
       height: 50vh;
-      width: 100%;
+      width: 90%;
       // border: 2px solid black; 
       // margin: 5px;
     }

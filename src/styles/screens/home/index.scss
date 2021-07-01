@@ -26,7 +26,7 @@ body {
 
     .highlights{
       height: 50vh;
-      width: 100%;
+      min-width: 90%;
       background-color: #EBF4FA;
       // border: 2px solid blue;
     }
@@ -36,6 +36,13 @@ body {
       width: 100%;
       background-color: #EBF4FA;
       // border: 2px solid blue;
+    }
+
+    .summer{
+      @extend .brand;
+    }
+    .winter{
+      @extend .brand;
     }
   
   
