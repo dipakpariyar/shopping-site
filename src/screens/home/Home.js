@@ -5,6 +5,8 @@ import Highlights from '../../common/highlights/Highlights';
 import Slider from '../slider/Slider';
 import Popularbrand from '../popular-brand/Popularbrand';
 import axios from 'axios';
+import Summer from '../summer';
+import Winter from '../winter';
 
 // hlw this for test
 // this comment from bhagya
@@ -40,9 +42,19 @@ export default function Home() {
         <Popularbrand />
       </div>
 
+      <div className="summer">
+        <Summer />
+
+      </div>
+
+      <div className="winter">
+        <Winter />
+      </div>
+
       <div className="footer_wrapper">
         <Footer />
       </div>
+      
 
     </div>
   )
