@@ -35,7 +35,7 @@ export default function Cardimg(props) {
 
   return (
     <div className="card-main-div">
-      <Carousel responsive={responsive} partialVisbile>
+      <Carousel responsive={responsive} partialVisbile> 
         {cards}
       </Carousel>
     </div>

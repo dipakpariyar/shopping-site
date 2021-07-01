@@ -20,12 +20,12 @@ body .home_div .slider_div {
   width: 100%;
 }
 body .home_div .highlights {
-  height: 60vh;
+  height: 50vh;
   width: 100%;
   background-color: #EBF4FA;
 }
 body .home_div .brand {
-  height: 60vh;
+  height: 50vh;
   width: 100%;
   background-color: #EBF4FA;
 }
@@ -183,7 +183,7 @@ body .home_div .footer_wrapper {
   width: 100%;
 }
 .brand_div .brand_carousel_div .brand_carousel {
-  height: 50vh;
+  height: 40vh;
   width: 100%;
 }
 
@@ -203,14 +203,14 @@ body .home_div .footer_wrapper {
   justify-content: space-between;
 }
 .highlights_div .highlight_text {
-  height: 10vh;
+  height: 7vh;
   width: 100%;
   padding-left: 1.5vw;
   font-size: 2rem;
   text-align: justify;
 }
 .highlights_div .first_div {
-  height: 50vh;
+  height: 42vh;
   width: 100%;
 }
 .highlights_div .first_div .first_card {
@@ -364,8 +364,8 @@ body .home_div .footer_wrapper {
   }
 }
 .item1_div {
-  height: 40vh;
-  width: 29vw;
+  height: 35vh;
+  width: 25vw;
   margin-top: 2vh;
   margin: 10px;
   transition: width 1s, height 1s, transform 1s;

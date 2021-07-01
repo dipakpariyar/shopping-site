@@ -11,14 +11,13 @@ export default function Highlights() {
     '/assets/images/heater.jpg',
     '/assets/images/iron.jpg',
     '/assets/images/mpi.jpg',
-    '/assets/images/blender.jpg', 
+    '/assets/images/blender.jpg',
   ];
 
   return (
     <div className="highlights_div">
       <div className="highlight_text">
         <h2>Highlights</h2>
-
       </div>
 
       <div className="first_div">

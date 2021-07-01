@@ -1,12 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Footer from '../../common/footer/Footer';
 import Header from '../../common/header/Header';
 import Highlights from '../../common/highlights/Highlights';
 import Slider from '../slider/Slider';
 import Popularbrand from '../popular-brand/Popularbrand';
+import axios from 'axios';
+
 // hlw this for test
 // this comment from bhagya
 export default function Home() {
+  useEffect(() => {
+  fetchData();
+  })
+
+  const fetchData = async () => {
+    const data = await axios.get('http://localhost:3000/Products');
+    console.log('server data', data);
+  }
   return (
     <div className="home_div">
       <div className="header_wrapper">
