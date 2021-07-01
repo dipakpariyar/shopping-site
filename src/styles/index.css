@@ -171,9 +171,13 @@ body .home_div .footer_wrapper {
   display: flex;
   flex-direction: column;
 }
-.brand_div .brand_text {
+.brand_div .brand-text-div {
+  display: flex;
+  justify-content: center;
+}
+.brand_div .brand-text-div .brand_text {
   height: 7vh;
-  width: 100%;
+  width: 90%;
   padding-left: 1.5vw;
   font-size: 2rem;
   text-align: justify;
@@ -205,8 +209,12 @@ body .home_div .footer_wrapper {
   justify-content: space-between;
 }
 .highlights_div .highlight_text {
+  display: flex;
+  justify-content: center;
+}
+.highlights_div .highlight_text .text_div {
   height: 7vh;
-  width: 100%;
+  width: 90%;
   padding-left: 1.5vw;
   font-size: 2rem;
   text-align: justify;
@@ -395,9 +403,13 @@ body .home_div .footer_wrapper {
   display: flex;
   flex-direction: column;
 }
-.summer_brand .summer_text {
+.summer_brand .summer-text-div {
+  display: flex;
+  justify-content: center;
+}
+.summer_brand .summer-text-div .summer_text {
   height: 7vh;
-  width: 100%;
+  width: 90%;
   padding-left: 1.5vw;
   font-size: 2rem;
   text-align: justify;
@@ -419,9 +431,13 @@ body .home_div .footer_wrapper {
   display: flex;
   flex-direction: column;
 }
-.winter_brand .winter_text {
+.winter_brand .winter-text-div {
+  display: flex;
+  justify-content: center;
+}
+.winter_brand .winter-text-div .winter_text {
   height: 7vh;
-  width: 100%;
+  width: 90%;
   padding-left: 1.5vw;
   font-size: 2rem;
   text-align: justify;

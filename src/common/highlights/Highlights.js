@@ -17,7 +17,7 @@ export default function Highlights() {
   return (
     <div className="highlights_div">
       <div className="highlight_text">
-        <h2>Highlights</h2>
+        <h2 className="text_div">Highlights</h2>
       </div>
 
       <div className="first_div">

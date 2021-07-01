@@ -4,15 +4,18 @@
   display: flex;
   flex-direction: column;
   // justify-content: spac;
-.summer_text{
-  height: 7vh;
-     width: 100%;
-     padding-left: 1.5vw;
-     font-size: 2rem;
-    text-align: justify;
-    // border: 1px solid green;
+.summer-text-div{
+  display: flex;
+  justify-content: center;
+  .summer_text{
+    height: 7vh;
+       width: 90%;
+       padding-left: 1.5vw;
+       font-size: 2rem;
+      text-align: justify;
+      // border: 1px solid green;
+  }  
 }
-
 .summer_carousel_div{
   display: flex;
   justify-content: center;

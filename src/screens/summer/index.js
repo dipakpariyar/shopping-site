@@ -12,7 +12,9 @@ export default function Summer() {
   ];
   return (
     <div className="summer_brand">
+      <div className="summer-text-div">
       <h2 className="summer_text">Summer</h2>
+      </div>
 
 
 <div className="summer_carousel_div">

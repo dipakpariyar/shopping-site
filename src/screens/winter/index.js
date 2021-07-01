@@ -12,7 +12,9 @@ export default function Winter() {
   ]
   return (
     <div className="winter_brand">
+      <div className="winter-text-div">
       <h2 className="winter_text">Winter</h2>
+      </div>
 
 
       <div className="winter_carousel_div">
