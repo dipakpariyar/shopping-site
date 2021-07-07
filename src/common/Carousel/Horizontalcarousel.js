@@ -1,10 +1,16 @@
 import React from 'react'
 import Carousel from 'react-multi-carousel';
-
+import DetailCard from './DetailCard';
+import HighLightCard from './HighlightCard';
 
 
 export default function Cardimg(props) {
-  const { data } = props;
+  const { data, cardType } = props;
+  console.log('Cart type', cardType);
+  const customItem = cardType === 'detail' ? 4 : 3;
+  const halfItem = cardType === 'detail' ? 20 : 40;
+  const mobileItem= cardType== 'detail' ? 2 :1 ;
+  const halfMobileSize = cardType === 'detail' ? 0 : 45;
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -14,8 +20,8 @@ export default function Cardimg(props) {
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-      partialVisibilityGutter: 40
+      items: customItem, 
+      partialVisibilityGutter: halfItem
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
@@ -24,14 +30,12 @@ export default function Cardimg(props) {
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
-      items: 1,
-      partialVisibilityGutter: 40
+      items: mobileItem,
+      partialVisibilityGutter: halfMobileSize
     }
   }
 
-  const cards = data.map(d => <div className="item1_div">
-  <img src={d} className="item1_div__img" alt=""/>
-</div>);
+  const cards = data.map(d => cardType === 'detail' ? <DetailCard detail={d} /> : <HighLightCard img={d} />);
 
   return (
     <div className="card-main-div">
