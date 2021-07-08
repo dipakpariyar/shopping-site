@@ -1,0 +1,6 @@
+FROM node:14
+
+WORKDIR .
+RUN npm install -g json-server
+COPY server.sh .
+CMD ./server.sh

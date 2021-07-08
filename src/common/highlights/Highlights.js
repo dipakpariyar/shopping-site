@@ -1,8 +1,6 @@
 import React from 'react'
 import Carousel from '../Carousel/Horizontalcarousel'
 
-
-
 export default function Highlights() {
 
   const data = [
@@ -17,7 +15,7 @@ export default function Highlights() {
   return (
     <div className="highlights_div">
       <div className="highlight_text">
-        <h2>Highlights</h2>
+        <h2>Highlights changed</h2>
       </div>
 
       <div className="first_div">

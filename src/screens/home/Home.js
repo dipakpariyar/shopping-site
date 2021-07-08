@@ -16,7 +16,7 @@ export default function Home() {
   })
 
   const fetchData = async () => {
-    const data = await axios.get('http://localhost:3000/Products');
+    const data = await axios.get('http://localhost:4000/Products');
     console.log('server data', data);
   }
   return (
