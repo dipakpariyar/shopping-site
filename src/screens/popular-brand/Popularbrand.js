@@ -17,7 +17,9 @@ export default function Popularbrand() {
 
   return (
     <div className="brand_div">
+      <div className="brand-text-div">
       <h2 className="brand_text">Popular Brand</h2>
+      </div>
 
 
       <div className="brand_carousel_div">

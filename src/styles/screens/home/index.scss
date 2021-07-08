@@ -38,10 +38,12 @@ body {
     }
 
     .summer{
-      @extend .brand;
+      height: 55vh;
+      width: 100%;
+      background-color: #EBF4FA;
     }
     .winter{
-      @extend .brand;
+      @extend .summer;
     }
   
   
@@ -59,7 +61,7 @@ body {
 
 @media screen and (max-width:360px){
   body .home_div .highlights {
-    height: 45vh;
+    height: 40vh;
     width: 100%;
 }
 
@@ -69,7 +71,7 @@ body .home_div .slider_div {
 }
 
 body .home_div .brand {
-  height: 50vh;
+  height: 40vh;
   width: 100%;
 
 }
@@ -78,6 +80,12 @@ body .home_div .footer_wrapper {
   height: 15vh;
   width: 100%;
 
+}
+
+body .home_div .summer, body .home_div .winter {
+  height: 52vh;
+  width: 100%;
+  background-color: #EBF4FA;
 }
 
   

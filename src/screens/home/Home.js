@@ -8,8 +8,7 @@ import axios from 'axios';
 import Summer from '../summer';
 import Winter from '../winter';
 
-// hlw this for test
-// this comment from bhagya
+
 export default function Home() {
   useEffect(() => {
   fetchData();
@@ -53,7 +52,10 @@ export default function Home() {
 
       <div className="footer_wrapper">
         <Footer />
+       
       </div>
+
+      
       
 
     </div>

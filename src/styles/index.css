@@ -24,8 +24,13 @@ body .home_div .highlights {
   min-width: 90%;
   background-color: #EBF4FA;
 }
-body .home_div .brand, body .home_div .winter, body .home_div .summer {
+body .home_div .brand {
   height: 50vh;
+  width: 100%;
+  background-color: #EBF4FA;
+}
+body .home_div .summer, body .home_div .winter {
+  height: 55vh;
   width: 100%;
   background-color: #EBF4FA;
 }
@@ -37,7 +42,7 @@ body .home_div .footer_wrapper {
 
 @media screen and (max-width: 360px) {
   body .home_div .highlights {
-    height: 45vh;
+    height: 40vh;
     width: 100%;
   }
 
@@ -46,14 +51,20 @@ body .home_div .footer_wrapper {
     width: 100%;
   }
 
-  body .home_div .brand, body .home_div .summer, body .home_div .winter {
-    height: 50vh;
+  body .home_div .brand {
+    height: 40vh;
     width: 100%;
   }
 
   body .home_div .footer_wrapper {
     height: 15vh;
     width: 100%;
+  }
+
+  body .home_div .summer, body .home_div .winter {
+    height: 52vh;
+    width: 100%;
+    background-color: #EBF4FA;
   }
 }
 .footer_div {
@@ -77,6 +88,7 @@ body .home_div .footer_wrapper {
 }
 .footer_div .about_contact li a {
   text-decoration: none;
+  color: #fff;
 }
 .footer_div .social_media {
   display: flex;
@@ -171,9 +183,13 @@ body .home_div .footer_wrapper {
   display: flex;
   flex-direction: column;
 }
-.brand_div .brand_text {
+.brand_div .brand-text-div {
+  display: flex;
+  justify-content: center;
+}
+.brand_div .brand-text-div .brand_text {
   height: 7vh;
-  width: 100%;
+  width: 90%;
   padding-left: 1.5vw;
   font-size: 2rem;
   text-align: justify;
@@ -205,8 +221,12 @@ body .home_div .footer_wrapper {
   justify-content: space-between;
 }
 .highlights_div .highlight_text {
+  display: flex;
+  justify-content: center;
+}
+.highlights_div .highlight_text .text_div {
   height: 7vh;
-  width: 100%;
+  width: 90%;
   padding-left: 1.5vw;
   font-size: 2rem;
   text-align: justify;
@@ -354,7 +374,7 @@ body .home_div .footer_wrapper {
 
   .header_div .card_div {
     height: 10vh;
-    width: 12vw;
+    width: 18vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -368,25 +388,79 @@ body .home_div .footer_wrapper {
   }
 }
 .item1_div {
+  position: relative;
+  height: 45vh;
+  width: 20vw;
+  margin-top: 2vh;
+  margin: 10px;
+  transition: width 1s, height 1s, transform 1s;
+}
+.item1_div .item1_div__img {
+  height: 60%;
+  width: 100%;
+  border-radius: 5%;
+}
+.item1_div .text-container {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.item1_div .text-container .name_price {
+  height: 50px;
+  width: 100%;
+}
+.item1_div .rating {
+  display: flex;
+  height: 3vh;
+  width: 12vw;
+}
+
+.item1_highlight_div {
   height: 35vh;
   width: 25vw;
   margin-top: 2vh;
   margin: 10px;
   transition: width 1s, height 1s, transform 1s;
 }
-.item1_div:hover {
-  transform: translate(-10%, -5%);
+.item1_highlight_div:hover {
+  transform: translate(-3%, -3%);
 }
-.item1_div .item1_div__img {
+.item1_highlight_div .item1_div__img {
   height: 100%;
   width: 100%;
   border-radius: 5%;
 }
 
+.card_title.h5 {
+  font-size: 15px;
+}
+
 @media screen and (max-width: 360px) {
   .item1_div {
-    height: 30vh;
-    width: 82vw;
+    height: 42vh;
+    width: 45vw;
+  }
+
+  .item1_div .rating {
+    display: flex;
+    height: 3vh;
+    width: 33vw;
+  }
+
+  .item1_highlight_div {
+    height: 25vh;
+    width: 70vw;
+  }
+
+  .item1_div .item1_div__img {
+    height: 55%;
+    width: 100%;
+    border-radius: 5%;
+  }
+
+  .card_title h5 {
+    font-size: 0;
   }
 }
 .summer_brand {
@@ -395,9 +469,13 @@ body .home_div .footer_wrapper {
   display: flex;
   flex-direction: column;
 }
-.summer_brand .summer_text {
-  height: 7vh;
-  width: 100%;
+.summer_brand .summer-text-div {
+  display: flex;
+  justify-content: center;
+}
+.summer_brand .summer-text-div .summer_text {
+  height: 5vh;
+  width: 90%;
   padding-left: 1.5vw;
   font-size: 2rem;
   text-align: justify;
@@ -409,19 +487,29 @@ body .home_div .footer_wrapper {
   width: 100%;
 }
 .summer_brand .summer_carousel_div .summer_carousel {
-  height: 40vh;
+  height: 45vh;
   width: 90%;
 }
 
+@media screen and (max-width: 360px) {
+  .summer_brand .summer_carousel_div .summer_carousel {
+    height: 45vh;
+    width: 100%;
+  }
+}
 .winter_brand {
   height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
 }
-.winter_brand .winter_text {
-  height: 7vh;
-  width: 100%;
+.winter_brand .winter-text-div {
+  display: flex;
+  justify-content: center;
+}
+.winter_brand .winter-text-div .winter_text {
+  height: 5vh;
+  width: 90%;
   padding-left: 1.5vw;
   font-size: 2rem;
   text-align: justify;
@@ -433,10 +521,16 @@ body .home_div .footer_wrapper {
   width: 100%;
 }
 .winter_brand .winter_carousel_div .winter_carousel {
-  height: 40vh;
+  height: 45vh;
   width: 90%;
 }
 
+@media screen and (max-width: 360px) {
+  .winter_brand .winter_carousel_div .winter_carousel {
+    height: 45vh;
+    width: 100%;
+  }
+}
 * {
   margin: 0;
   padding: 0;
