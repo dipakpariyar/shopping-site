@@ -11,6 +11,9 @@ body {
     flex-direction: column;
   
     .header_wrapper{
+      z-index: 1001;
+      position: fixed;
+      top: 0;
       height: 16vh;
       width: 100%;
       background-color: #3EB489;
@@ -51,8 +54,6 @@ body {
       height: 20vh;
       width: 100%;
       background-color:#033E3E;
-      
-      
     
     }
   }

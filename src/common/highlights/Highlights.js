@@ -15,11 +15,7 @@ export default function Highlights() {
   return (
     <div className="highlights_div">
       <div className="highlight_text">
-<<<<<<< HEAD
         <h2>Highlights changed</h2>
-=======
-        <h2 className="text_div">Highlights</h2>
->>>>>>> 15e226097c6b622615c1e890a04c51b8a39fd6d7
       </div>
 
       <div className="first_div">

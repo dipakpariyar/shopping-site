@@ -20,10 +20,14 @@
     // transform: translate(10%,5%);
   }
 
-  .item1_div__img{
+  .item1_img_wrapper{
     height: 60%;
     width: 100%;
     border-radius: 5%;
+    .item1_div__img{
+      height: 100%;
+      width: 100%;
+    }
   }
   // h5{
   //   float: right;
@@ -85,7 +89,7 @@
 
 
 @media screen and (max-width:360px){
- .item1_div{
+ .item1_div{ 
    height: 42vh;
    width: 45vw;
  }
