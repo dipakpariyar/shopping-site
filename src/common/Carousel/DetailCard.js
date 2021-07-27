@@ -9,7 +9,7 @@ export default function DetailCard(props) {
 
 
 
-  const { detail } = props;
+  const { detail,data1 } = props;
   const { img, name, price } = detail;
   return (
     // <div className="img_container">

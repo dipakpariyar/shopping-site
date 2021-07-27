@@ -21,6 +21,7 @@ body .home_div .header_wrapper {
 body .home_div .slider_div {
   height: 60vh;
   width: 100%;
+  margin-top: 102px;
 }
 body .home_div .highlights {
   height: 50vh;
@@ -225,6 +226,8 @@ body .home_div .footer_wrapper {
   justify-content: space-between;
 }
 .highlights_div .highlight_text {
+  height: 7vh;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
@@ -567,517 +570,174 @@ body .home_div .footer_wrapper {
 }
 
 .product_specification {
-  display: flex;
-  justify-content: center;
-  height: 190vh;
   width: 100%;
   margin-top: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 .product_specification .specifiacation_shadow {
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  padding-bottom: 10%;
+  box-shadow: 0 0 4px 1px #666;
+}
+.product_specification .specifiacation_shadow .pro_category {
+  width: 100%;
+  margin-top: 25px;
+}
+.product_specification .specifiacation_shadow .pro_category .cat_title {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.product_specification .specifiacation_shadow .pro_category .pro_installation {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.product_specification .specifiacation_shadow .pro_category .i_type {
+  font-size: 1rem;
+  font-weight: 200;
+  margin-top: 5px;
+  color: #666;
+}
+.product_specification .specifiacation_shadow .pro_features {
+  width: 100%;
+  margin-top: 25px;
+}
+.product_specification .specifiacation_shadow .pro_features .fe_title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 15px;
+}
+.product_specification .specifiacation_shadow .pro_features .fe_items {
+  display: flex;
+  justify-content: space-between;
+}
+.product_specification .specifiacation_shadow .pro_features .fe_items .items {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 10px;
+  width: 30%;
+}
+.product_specification .specifiacation_shadow .pro_features .fe_items_ans {
+  display: flex;
+  justify-content: space-between;
+}
+.product_specification .specifiacation_shadow .pro_features .fe_items_ans .i_ans {
+  font-size: 1rem;
+  font-weight: 200;
+  margin-top: 5px;
+  color: #666;
+  width: 30%;
+}
+.product_specification .specifiacation_shadow .phy_attributes {
+  width: 65%;
+  margin-top: 25px;
+}
+.product_specification .specifiacation_shadow .phy_attributes .fe_title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 15px;
+}
+.product_specification .specifiacation_shadow .phy_attributes .fe_items {
+  display: flex;
+  justify-content: space-between;
+}
+.product_specification .specifiacation_shadow .phy_attributes .fe_items .items {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 10px;
+  width: 45%;
+}
+.product_specification .specifiacation_shadow .phy_attributes .fe_items_ans {
+  display: flex;
+  justify-content: space-between;
+}
+.product_specification .specifiacation_shadow .phy_attributes .fe_items_ans .i_ans {
+  font-size: 1rem;
+  font-weight: 200;
+  margin-top: 5px;
+  color: #666;
+  width: 45%;
+}
+
+@media screen and (max-width: 360px) {
+  .product_specification .specifiacation_shadow .pro_features .fe_items_ans .i_ans {
+    font-size: 1rem;
+    font-weight: 200;
+    margin-top: 5px;
+    color: #666;
+    width: 33%;
+  }
+}
+.product_overviews {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 5vh;
+}
+.product_overviews .overviews_shadow {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100%;
   width: 90%;
   box-shadow: 0 0 4px 1px #666;
 }
-.product_specification .specifiacation_shadow .specification_title {
+.product_overviews .overviews_shadow .overviews_title {
   display: flex;
   align-items: flex-end;
   height: 7vh;
   width: 95%;
+  margin-top: 5px;
 }
-.product_specification .specifiacation_shadow .product_specification_wrapper {
-  height: 175vh;
+.product_overviews .overviews_shadow .overviews_content {
   width: 95%;
-  display: flexf;
-  flex-direction: column;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .product_category_wrapper {
-  height: 15vh;
-  width: 100%;
   margin-top: 5px;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .product_category_wrapper .product_category {
-  display: flex;
-  align-items: center;
-  height: 5vh;
-  width: 100%;
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .product_category_wrapper .installation_wrapper {
-  display: flex;
-  flex-direction: column;
-  height: 8vh;
-  width: 100%;
-  margin-top: 3px;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .product_category_wrapper .installation_wrapper .product_installation {
-  display: flex;
-  align-items: center;
-  height: 4vh;
-  width: 100%;
-  font-size: 1rem;
-  font-weight: 500;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .product_category_wrapper .installation_wrapper .installation_type {
-  height: 3.5vh;
-  width: 100%;
   font-size: 1rem;
   font-weight: 200;
   color: #666;
 }
-.product_specification .specifiacation_shadow .product_specification_wrapper .manufacturer_details_wrapper {
-  height: 15vh;
-  width: 100%;
-  margin-top: 5px;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .manufacturer_details_wrapper .manufacturer_details {
-  display: flex;
-  align-items: center;
-  height: 5vh;
-  width: 100%;
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .manufacturer_details_wrapper .brand_wrapper {
-  display: flex;
-  flex-direction: column;
-  height: 8vh;
-  width: 100%;
-  margin-top: 3px;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .manufacturer_details_wrapper .brand_wrapper .product_brand {
-  display: flex;
-  align-items: center;
-  height: 4vh;
-  width: 100%;
-  font-size: 1rem;
-  font-weight: 500;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .manufacturer_details_wrapper .brand_wrapper .brand {
-  height: 3.5vh;
-  width: 100%;
-  font-size: 1rem;
-  font-weight: 200;
-  color: #666;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .product_features_wrapper {
-  height: 15vh;
-  width: 100%;
-  margin-top: 5px;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .product_features_wrapper .features_title {
-  display: flex;
-  align-items: center;
-  height: 5vh;
-  width: 100%;
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .product_features_wrapper .features_wrapper {
-  display: flex;
-  flex-direction: column;
-  height: 8vh;
-  width: 100%;
-  margin-top: 3px;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .product_features_wrapper .features_wrapper .features_items {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 4vh;
-  width: 100%;
-  font-size: 1rem;
-  font-weight: 500;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .product_features_wrapper .features_wrapper .features_items .div1, .product_specification .specifiacation_shadow .product_specification_wrapper .product_features_wrapper .features_wrapper .features_items .div3, .product_specification .specifiacation_shadow .product_specification_wrapper .product_features_wrapper .features_wrapper .features_items .div2 {
-  height: 100%;
-  width: 25%;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .product_features_wrapper .features_wrapper .features_items_ans {
-  display: flex;
-  justify-content: space-between;
-  height: 3.5vh;
-  width: 100%;
-  font-size: 1rem;
-  font-weight: 200;
-  color: #666;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .product_features_wrapper .features_wrapper .features_items_ans .sub_div1, .product_specification .specifiacation_shadow .product_specification_wrapper .product_features_wrapper .features_wrapper .features_items_ans .company_contact_information .lower_wrapper .information_items_ans .sub_div2, .product_specification .specifiacation_shadow .product_specification_wrapper .company_contact_information .lower_wrapper .information_items_ans .product_features_wrapper .features_wrapper .features_items_ans .sub_div2, .product_specification .specifiacation_shadow .product_specification_wrapper .product_features_wrapper .features_wrapper .features_items_ans .company_contact_information .upper_wrapper .information_items_ans .sub_div3, .product_specification .specifiacation_shadow .product_specification_wrapper .company_contact_information .upper_wrapper .information_items_ans .product_features_wrapper .features_wrapper .features_items_ans .sub_div3, .product_specification .specifiacation_shadow .product_specification_wrapper .product_features_wrapper .features_wrapper .features_items_ans .company_contact_information .upper_wrapper .information_items_ans .sub_div2, .product_specification .specifiacation_shadow .product_specification_wrapper .company_contact_information .upper_wrapper .information_items_ans .product_features_wrapper .features_wrapper .features_items_ans .sub_div2, .product_specification .specifiacation_shadow .product_specification_wrapper .product_features_wrapper .features_wrapper .features_items_ans .product_dimensions_wrapper .product_dimensions_items_wrapper .product_dimensions_items_ans .sub_div2, .product_specification .specifiacation_shadow .product_specification_wrapper .product_dimensions_wrapper .product_dimensions_items_wrapper .product_dimensions_items_ans .product_features_wrapper .features_wrapper .features_items_ans .sub_div2, .product_specification .specifiacation_shadow .product_specification_wrapper .product_features_wrapper .features_wrapper .features_items_ans .box_details_wrapper .box_wrapper .box_items_ans .sub_div3, .product_specification .specifiacation_shadow .product_specification_wrapper .box_details_wrapper .box_wrapper .box_items_ans .product_features_wrapper .features_wrapper .features_items_ans .sub_div3, .product_specification .specifiacation_shadow .product_specification_wrapper .product_features_wrapper .features_wrapper .features_items_ans .box_details_wrapper .box_wrapper .box_items_ans .sub_div2, .product_specification .specifiacation_shadow .product_specification_wrapper .box_details_wrapper .box_wrapper .box_items_ans .product_features_wrapper .features_wrapper .features_items_ans .sub_div2, .product_specification .specifiacation_shadow .product_specification_wrapper .product_features_wrapper .features_wrapper .features_items_ans .product_aesthetics_wrapper .product_aesthetics_items_wrapper .product_aesthetics_items_ans .sub_div2, .product_specification .specifiacation_shadow .product_specification_wrapper .product_aesthetics_wrapper .product_aesthetics_items_wrapper .product_aesthetics_items_ans .product_features_wrapper .features_wrapper .features_items_ans .sub_div2, .product_specification .specifiacation_shadow .product_specification_wrapper .product_features_wrapper .features_wrapper .features_items_ans .plug_details_wrapper .plug_details_wrapper .plug_details_items_ans .sub_div3, .product_specification .specifiacation_shadow .product_specification_wrapper .plug_details_wrapper .plug_details_wrapper .plug_details_items_ans .product_features_wrapper .features_wrapper .features_items_ans .sub_div3, .product_specification .specifiacation_shadow .product_specification_wrapper .product_features_wrapper .features_wrapper .features_items_ans .plug_details_wrapper .plug_details_wrapper .plug_details_items_ans .sub_div2, .product_specification .specifiacation_shadow .product_specification_wrapper .plug_details_wrapper .plug_details_wrapper .plug_details_items_ans .product_features_wrapper .features_wrapper .features_items_ans .sub_div2, .product_specification .specifiacation_shadow .product_specification_wrapper .product_features_wrapper .features_wrapper .features_items_ans .physical_attributes_wrapper .physical_attributes_wrapper .physical_attributes_items_ans .sub_div2, .product_specification .specifiacation_shadow .product_specification_wrapper .physical_attributes_wrapper .physical_attributes_wrapper .physical_attributes_items_ans .product_features_wrapper .features_wrapper .features_items_ans .sub_div2 {
-  height: 100%;
-  width: 25%;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .product_features_wrapper .features_wrapper .features_items_ans .sub_div2 {
-  height: 100%;
-  width: 25%;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .product_features_wrapper .features_wrapper .features_items_ans .sub_div3 {
-  height: 100%;
-  width: 25%;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .physical_attributes_wrapper {
-  height: 15vh;
-  width: 100%;
-  margin-top: 5px;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .physical_attributes_wrapper .physical_attributes_title {
-  display: flex;
-  align-items: center;
-  height: 5vh;
-  width: 100%;
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .physical_attributes_wrapper .physical_attributes_wrapper {
-  display: flex;
-  flex-direction: column;
-  height: 8vh;
-  width: 100%;
-  margin-top: 3px;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .physical_attributes_wrapper .physical_attributes_wrapper .physical_attributes_items {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 4vh;
-  width: 62%;
-  font-size: 1rem;
-  font-weight: 500;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .physical_attributes_wrapper .physical_attributes_wrapper .physical_attributes_items .div1, .product_specification .specifiacation_shadow .product_specification_wrapper .physical_attributes_wrapper .physical_attributes_wrapper .physical_attributes_items .company_contact_information .upper_wrapper .information_items .div3, .product_specification .specifiacation_shadow .product_specification_wrapper .company_contact_information .upper_wrapper .information_items .physical_attributes_wrapper .physical_attributes_wrapper .physical_attributes_items .div3, .product_specification .specifiacation_shadow .product_specification_wrapper .physical_attributes_wrapper .physical_attributes_wrapper .physical_attributes_items .box_details_wrapper .box_wrapper .box_items .div3, .product_specification .specifiacation_shadow .product_specification_wrapper .box_details_wrapper .box_wrapper .box_items .physical_attributes_wrapper .physical_attributes_wrapper .physical_attributes_items .div3, .product_specification .specifiacation_shadow .product_specification_wrapper .physical_attributes_wrapper .physical_attributes_wrapper .physical_attributes_items .plug_details_wrapper .plug_details_wrapper .plug_details_items .div3, .product_specification .specifiacation_shadow .product_specification_wrapper .plug_details_wrapper .plug_details_wrapper .plug_details_items .physical_attributes_wrapper .physical_attributes_wrapper .physical_attributes_items .div3, .product_specification .specifiacation_shadow .product_specification_wrapper .physical_attributes_wrapper .physical_attributes_wrapper .physical_attributes_items .div2, .product_specification .specifiacation_shadow .product_specification_wrapper .physical_attributes_wrapper .physical_attributes_wrapper .physical_attributes_items .product_features_wrapper .features_wrapper .features_items .div3, .product_specification .specifiacation_shadow .product_specification_wrapper .product_features_wrapper .features_wrapper .features_items .physical_attributes_wrapper .physical_attributes_wrapper .physical_attributes_items .div3 {
-  height: 100%;
-  width: 40%;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .physical_attributes_wrapper .physical_attributes_wrapper .physical_attributes_items_ans {
-  display: flex;
-  justify-content: space-between;
-  height: 3.5vh;
-  width: 62%;
-  font-size: 1rem;
-  font-weight: 200;
-  color: #666;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .physical_attributes_wrapper .physical_attributes_wrapper .physical_attributes_items_ans .sub_div1, .product_specification .specifiacation_shadow .product_specification_wrapper .physical_attributes_wrapper .physical_attributes_wrapper .physical_attributes_items_ans .company_contact_information .upper_wrapper .information_items_ans .sub_div3, .product_specification .specifiacation_shadow .product_specification_wrapper .company_contact_information .upper_wrapper .information_items_ans .physical_attributes_wrapper .physical_attributes_wrapper .physical_attributes_items_ans .sub_div3, .product_specification .specifiacation_shadow .product_specification_wrapper .physical_attributes_wrapper .physical_attributes_wrapper .physical_attributes_items_ans .box_details_wrapper .box_wrapper .box_items_ans .sub_div3, .product_specification .specifiacation_shadow .product_specification_wrapper .box_details_wrapper .box_wrapper .box_items_ans .physical_attributes_wrapper .physical_attributes_wrapper .physical_attributes_items_ans .sub_div3, .product_specification .specifiacation_shadow .product_specification_wrapper .physical_attributes_wrapper .physical_attributes_wrapper .physical_attributes_items_ans .plug_details_wrapper .plug_details_wrapper .plug_details_items_ans .sub_div3, .product_specification .specifiacation_shadow .product_specification_wrapper .plug_details_wrapper .plug_details_wrapper .plug_details_items_ans .physical_attributes_wrapper .physical_attributes_wrapper .physical_attributes_items_ans .sub_div3, .product_specification .specifiacation_shadow .product_specification_wrapper .physical_attributes_wrapper .physical_attributes_wrapper .physical_attributes_items_ans .sub_div2 {
-  height: 100%;
-  width: 40%;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .plug_details_wrapper {
-  height: 15vh;
-  width: 100%;
-  margin-top: 5px;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .plug_details_wrapper .plug_details_title {
-  display: flex;
-  align-items: center;
-  height: 5vh;
-  width: 100%;
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .plug_details_wrapper .plug_details_wrapper {
-  display: flex;
-  flex-direction: column;
-  height: 8vh;
-  width: 100%;
-  margin-top: 3px;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .plug_details_wrapper .plug_details_wrapper .plug_details_items {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 4vh;
-  width: 100%;
-  font-size: 1rem;
-  font-weight: 500;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .plug_details_wrapper .plug_details_wrapper .plug_details_items .div1, .product_specification .specifiacation_shadow .product_specification_wrapper .plug_details_wrapper .plug_details_wrapper .plug_details_items .div3, .product_specification .specifiacation_shadow .product_specification_wrapper .plug_details_wrapper .plug_details_wrapper .plug_details_items .div2 {
-  height: 100%;
-  width: 25%;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .plug_details_wrapper .plug_details_wrapper .plug_details_items_ans {
-  display: flex;
-  justify-content: space-between;
-  height: 3.5vh;
-  width: 100%;
-  font-size: 1rem;
-  font-weight: 200;
-  color: #666;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .plug_details_wrapper .plug_details_wrapper .plug_details_items_ans .sub_div1, .product_specification .specifiacation_shadow .product_specification_wrapper .plug_details_wrapper .plug_details_wrapper .plug_details_items_ans .sub_div3, .product_specification .specifiacation_shadow .product_specification_wrapper .plug_details_wrapper .plug_details_wrapper .plug_details_items_ans .sub_div2 {
-  height: 100%;
-  width: 25%;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .product_aesthetics_wrapper {
-  height: 15vh;
-  width: 100%;
-  margin-top: 5px;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .product_aesthetics_wrapper .product_aesthetics_title {
-  display: flex;
-  align-items: center;
-  height: 5vh;
-  width: 100%;
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .product_aesthetics_wrapper .product_aesthetics_items_wrapper {
-  display: flex;
-  flex-direction: column;
-  height: 8vh;
-  width: 100%;
-  margin-top: 3px;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .product_aesthetics_wrapper .product_aesthetics_items_wrapper .product_aesthetics_items {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 4vh;
-  width: 62%;
-  font-size: 1rem;
-  font-weight: 500;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .product_aesthetics_wrapper .product_aesthetics_items_wrapper .product_aesthetics_items .div1, .product_specification .specifiacation_shadow .product_specification_wrapper .product_aesthetics_wrapper .product_aesthetics_items_wrapper .product_aesthetics_items .company_contact_information .upper_wrapper .information_items .div3, .product_specification .specifiacation_shadow .product_specification_wrapper .company_contact_information .upper_wrapper .information_items .product_aesthetics_wrapper .product_aesthetics_items_wrapper .product_aesthetics_items .div3, .product_specification .specifiacation_shadow .product_specification_wrapper .product_aesthetics_wrapper .product_aesthetics_items_wrapper .product_aesthetics_items .box_details_wrapper .box_wrapper .box_items .div3, .product_specification .specifiacation_shadow .product_specification_wrapper .box_details_wrapper .box_wrapper .box_items .product_aesthetics_wrapper .product_aesthetics_items_wrapper .product_aesthetics_items .div3, .product_specification .specifiacation_shadow .product_specification_wrapper .product_aesthetics_wrapper .product_aesthetics_items_wrapper .product_aesthetics_items .div2, .product_specification .specifiacation_shadow .product_specification_wrapper .product_aesthetics_wrapper .product_aesthetics_items_wrapper .product_aesthetics_items .product_features_wrapper .features_wrapper .features_items .div3, .product_specification .specifiacation_shadow .product_specification_wrapper .product_features_wrapper .features_wrapper .features_items .product_aesthetics_wrapper .product_aesthetics_items_wrapper .product_aesthetics_items .div3, .product_specification .specifiacation_shadow .product_specification_wrapper .product_aesthetics_wrapper .product_aesthetics_items_wrapper .product_aesthetics_items .plug_details_wrapper .plug_details_wrapper .plug_details_items .div3, .product_specification .specifiacation_shadow .product_specification_wrapper .plug_details_wrapper .plug_details_wrapper .plug_details_items .product_aesthetics_wrapper .product_aesthetics_items_wrapper .product_aesthetics_items .div3 {
-  height: 100%;
-  width: 40%;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .product_aesthetics_wrapper .product_aesthetics_items_wrapper .product_aesthetics_items_ans {
-  display: flex;
-  justify-content: space-between;
-  height: 3.5vh;
-  width: 62%;
-  font-size: 1rem;
-  font-weight: 200;
-  color: #666;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .product_aesthetics_wrapper .product_aesthetics_items_wrapper .product_aesthetics_items_ans .sub_div1, .product_specification .specifiacation_shadow .product_specification_wrapper .product_aesthetics_wrapper .product_aesthetics_items_wrapper .product_aesthetics_items_ans .company_contact_information .upper_wrapper .information_items_ans .sub_div3, .product_specification .specifiacation_shadow .product_specification_wrapper .company_contact_information .upper_wrapper .information_items_ans .product_aesthetics_wrapper .product_aesthetics_items_wrapper .product_aesthetics_items_ans .sub_div3, .product_specification .specifiacation_shadow .product_specification_wrapper .product_aesthetics_wrapper .product_aesthetics_items_wrapper .product_aesthetics_items_ans .box_details_wrapper .box_wrapper .box_items_ans .sub_div3, .product_specification .specifiacation_shadow .product_specification_wrapper .box_details_wrapper .box_wrapper .box_items_ans .product_aesthetics_wrapper .product_aesthetics_items_wrapper .product_aesthetics_items_ans .sub_div3, .product_specification .specifiacation_shadow .product_specification_wrapper .product_aesthetics_wrapper .product_aesthetics_items_wrapper .product_aesthetics_items_ans .sub_div2, .product_specification .specifiacation_shadow .product_specification_wrapper .product_aesthetics_wrapper .product_aesthetics_items_wrapper .product_aesthetics_items_ans .plug_details_wrapper .plug_details_wrapper .plug_details_items_ans .sub_div3, .product_specification .specifiacation_shadow .product_specification_wrapper .plug_details_wrapper .plug_details_wrapper .plug_details_items_ans .product_aesthetics_wrapper .product_aesthetics_items_wrapper .product_aesthetics_items_ans .sub_div3 {
-  height: 100%;
-  width: 25%;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .box_details_wrapper {
-  height: 15vh;
-  width: 100%;
-  margin-top: 5px;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .box_details_wrapper .plug_details_title {
-  display: flex;
-  align-items: center;
-  height: 5vh;
-  width: 100%;
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .box_details_wrapper .box_wrapper {
-  display: flex;
-  flex-direction: column;
-  height: 8vh;
-  width: 100%;
-  margin-top: 3px;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .box_details_wrapper .box_wrapper .box_items {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 4vh;
-  width: 100%;
-  font-size: 1rem;
-  font-weight: 500;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .box_details_wrapper .box_wrapper .box_items .div1, .product_specification .specifiacation_shadow .product_specification_wrapper .box_details_wrapper .box_wrapper .box_items .div3, .product_specification .specifiacation_shadow .product_specification_wrapper .box_details_wrapper .box_wrapper .box_items .div2 {
-  height: 100%;
-  width: 25%;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .box_details_wrapper .box_wrapper .box_items_ans {
-  display: flex;
-  justify-content: space-between;
-  height: 3.5vh;
-  width: 100%;
-  font-size: 1rem;
-  font-weight: 200;
-  color: #666;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .box_details_wrapper .box_wrapper .box_items_ans .sub_div1, .product_specification .specifiacation_shadow .product_specification_wrapper .box_details_wrapper .box_wrapper .box_items_ans .sub_div3, .product_specification .specifiacation_shadow .product_specification_wrapper .box_details_wrapper .box_wrapper .box_items_ans .sub_div2 {
-  height: 100%;
-  width: 25%;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .product_dimensions_wrapper {
-  height: 15vh;
-  width: 100%;
-  margin-top: 5px;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .product_dimensions_wrapper .product_dimensions_title {
-  display: flex;
-  align-items: center;
-  height: 5vh;
-  width: 100%;
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .product_dimensions_wrapper .product_dimensions_items_wrapper {
-  display: flex;
-  flex-direction: column;
-  height: 8vh;
-  width: 100%;
-  margin-top: 3px;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .product_dimensions_wrapper .product_dimensions_items_wrapper .product_dimensions_items {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 4vh;
-  width: 62%;
-  font-size: 1rem;
-  font-weight: 500;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .product_dimensions_wrapper .product_dimensions_items_wrapper .product_dimensions_items .div1, .product_specification .specifiacation_shadow .product_specification_wrapper .product_dimensions_wrapper .product_dimensions_items_wrapper .product_dimensions_items .company_contact_information .upper_wrapper .information_items .div3, .product_specification .specifiacation_shadow .product_specification_wrapper .company_contact_information .upper_wrapper .information_items .product_dimensions_wrapper .product_dimensions_items_wrapper .product_dimensions_items .div3, .product_specification .specifiacation_shadow .product_specification_wrapper .product_dimensions_wrapper .product_dimensions_items_wrapper .product_dimensions_items .div2, .product_specification .specifiacation_shadow .product_specification_wrapper .product_dimensions_wrapper .product_dimensions_items_wrapper .product_dimensions_items .product_features_wrapper .features_wrapper .features_items .div3, .product_specification .specifiacation_shadow .product_specification_wrapper .product_features_wrapper .features_wrapper .features_items .product_dimensions_wrapper .product_dimensions_items_wrapper .product_dimensions_items .div3, .product_specification .specifiacation_shadow .product_specification_wrapper .product_dimensions_wrapper .product_dimensions_items_wrapper .product_dimensions_items .plug_details_wrapper .plug_details_wrapper .plug_details_items .div3, .product_specification .specifiacation_shadow .product_specification_wrapper .plug_details_wrapper .plug_details_wrapper .plug_details_items .product_dimensions_wrapper .product_dimensions_items_wrapper .product_dimensions_items .div3, .product_specification .specifiacation_shadow .product_specification_wrapper .product_dimensions_wrapper .product_dimensions_items_wrapper .product_dimensions_items .box_details_wrapper .box_wrapper .box_items .div3, .product_specification .specifiacation_shadow .product_specification_wrapper .box_details_wrapper .box_wrapper .box_items .product_dimensions_wrapper .product_dimensions_items_wrapper .product_dimensions_items .div3 {
-  height: 100%;
-  width: 40%;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .product_dimensions_wrapper .product_dimensions_items_wrapper .product_dimensions_items_ans {
-  display: flex;
-  justify-content: space-between;
-  height: 3.5vh;
-  width: 62%;
-  font-size: 1rem;
-  font-weight: 200;
-  color: #666;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .product_dimensions_wrapper .product_dimensions_items_wrapper .product_dimensions_items_ans .sub_div1, .product_specification .specifiacation_shadow .product_specification_wrapper .product_dimensions_wrapper .product_dimensions_items_wrapper .product_dimensions_items_ans .company_contact_information .upper_wrapper .information_items_ans .sub_div3, .product_specification .specifiacation_shadow .product_specification_wrapper .company_contact_information .upper_wrapper .information_items_ans .product_dimensions_wrapper .product_dimensions_items_wrapper .product_dimensions_items_ans .sub_div3, .product_specification .specifiacation_shadow .product_specification_wrapper .product_dimensions_wrapper .product_dimensions_items_wrapper .product_dimensions_items_ans .sub_div2, .product_specification .specifiacation_shadow .product_specification_wrapper .product_dimensions_wrapper .product_dimensions_items_wrapper .product_dimensions_items_ans .plug_details_wrapper .plug_details_wrapper .plug_details_items_ans .sub_div3, .product_specification .specifiacation_shadow .product_specification_wrapper .plug_details_wrapper .plug_details_wrapper .plug_details_items_ans .product_dimensions_wrapper .product_dimensions_items_wrapper .product_dimensions_items_ans .sub_div3, .product_specification .specifiacation_shadow .product_specification_wrapper .product_dimensions_wrapper .product_dimensions_items_wrapper .product_dimensions_items_ans .box_details_wrapper .box_wrapper .box_items_ans .sub_div3, .product_specification .specifiacation_shadow .product_specification_wrapper .box_details_wrapper .box_wrapper .box_items_ans .product_dimensions_wrapper .product_dimensions_items_wrapper .product_dimensions_items_ans .sub_div3 {
-  height: 100%;
-  width: 40%;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .company_contact_information {
-  height: 30vh;
-  width: 100%;
-  margin-top: 5px;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .company_contact_information .company_contact_title {
-  display: flex;
-  align-items: center;
-  height: 5vh;
-  width: 100%;
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .company_contact_information .upper_wrapper {
-  display: flex;
-  flex-direction: column;
-  height: 12vh;
-  width: 100%;
-  margin-top: 5px;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .company_contact_information .upper_wrapper .information_items {
-  display: flex;
-  justify-content: space-between;
-  height: 4vh;
-  width: 100%;
-  font-size: 1rem;
-  font-weight: 500;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .company_contact_information .upper_wrapper .information_items .div1, .product_specification .specifiacation_shadow .product_specification_wrapper .company_contact_information .upper_wrapper .information_items .div3, .product_specification .specifiacation_shadow .product_specification_wrapper .company_contact_information .upper_wrapper .information_items .div2 {
-  height: 100%;
-  width: 35%;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .company_contact_information .upper_wrapper .information_items .div2 {
-  width: 25%;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .company_contact_information .upper_wrapper .information_items .div3 {
-  width: 25%;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .company_contact_information .upper_wrapper .information_items_ans {
-  display: flex;
-  justify-content: space-between;
-  height: 3.5vh;
-  width: 100%;
-  font-size: 1rem;
-  font-weight: 200;
-  color: #666;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .company_contact_information .upper_wrapper .information_items_ans .sub_div1, .product_specification .specifiacation_shadow .product_specification_wrapper .company_contact_information .upper_wrapper .information_items_ans .sub_div3, .product_specification .specifiacation_shadow .product_specification_wrapper .company_contact_information .upper_wrapper .information_items_ans .sub_div2 {
-  height: 100%;
-  width: 35%;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .company_contact_information .upper_wrapper .information_items_ans .sub_div2 {
-  width: 25%;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .company_contact_information .upper_wrapper .information_items_ans .sub_div3 {
-  width: 25%;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .company_contact_information .lower_wrapper {
-  display: flex;
-  flex-direction: column;
-  height: 10vh;
-  width: 100%;
-  margin-top: 10px;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .company_contact_information .lower_wrapper .information_items {
-  display: flex;
-  justify-content: space-between;
-  height: 4vh;
-  width: 62%;
-  font-size: 1rem;
-  font-weight: 500;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .company_contact_information .lower_wrapper .information_items .div1, .product_specification .specifiacation_shadow .product_specification_wrapper .company_contact_information .lower_wrapper .information_items .div2, .product_specification .specifiacation_shadow .product_specification_wrapper .company_contact_information .lower_wrapper .information_items .product_features_wrapper .features_wrapper .features_items .div3, .product_specification .specifiacation_shadow .product_specification_wrapper .product_features_wrapper .features_wrapper .features_items .company_contact_information .lower_wrapper .information_items .div3, .product_specification .specifiacation_shadow .product_specification_wrapper .company_contact_information .lower_wrapper .information_items .plug_details_wrapper .plug_details_wrapper .plug_details_items .div3, .product_specification .specifiacation_shadow .product_specification_wrapper .plug_details_wrapper .plug_details_wrapper .plug_details_items .company_contact_information .lower_wrapper .information_items .div3, .product_specification .specifiacation_shadow .product_specification_wrapper .company_contact_information .lower_wrapper .information_items .box_details_wrapper .box_wrapper .box_items .div3, .product_specification .specifiacation_shadow .product_specification_wrapper .box_details_wrapper .box_wrapper .box_items .company_contact_information .lower_wrapper .information_items .div3, .product_specification .specifiacation_shadow .product_specification_wrapper .company_contact_information .lower_wrapper .upper_wrapper .information_items .div3, .product_specification .specifiacation_shadow .product_specification_wrapper .company_contact_information .upper_wrapper .lower_wrapper .information_items .div3 {
-  height: 100%;
-  width: 30%;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .company_contact_information .lower_wrapper .information_items_ans {
-  display: flex;
-  justify-content: space-between;
-  height: 3.5;
-  width: 62%;
-  font-size: 1rem;
-  font-weight: 200;
-  color: #666;
-}
-.product_specification .specifiacation_shadow .product_specification_wrapper .company_contact_information .lower_wrapper .information_items_ans .sub_div1, .product_specification .specifiacation_shadow .product_specification_wrapper .company_contact_information .lower_wrapper .information_items_ans .sub_div2, .product_specification .specifiacation_shadow .product_specification_wrapper .company_contact_information .lower_wrapper .information_items_ans .plug_details_wrapper .plug_details_wrapper .plug_details_items_ans .sub_div3, .product_specification .specifiacation_shadow .product_specification_wrapper .plug_details_wrapper .plug_details_wrapper .plug_details_items_ans .company_contact_information .lower_wrapper .information_items_ans .sub_div3, .product_specification .specifiacation_shadow .product_specification_wrapper .company_contact_information .lower_wrapper .information_items_ans .box_details_wrapper .box_wrapper .box_items_ans .sub_div3, .product_specification .specifiacation_shadow .product_specification_wrapper .box_details_wrapper .box_wrapper .box_items_ans .company_contact_information .lower_wrapper .information_items_ans .sub_div3, .product_specification .specifiacation_shadow .product_specification_wrapper .company_contact_information .lower_wrapper .upper_wrapper .information_items_ans .sub_div3, .product_specification .specifiacation_shadow .product_specification_wrapper .company_contact_information .upper_wrapper .lower_wrapper .information_items_ans .sub_div3 {
-  height: 100%;
-  width: 30%;
-}
+
 .main-container {
   display: flex;
   justify-content: center;
-  height: 70vh;
   width: 100%;
+  margin-top: 97px;
 }
 .main-container .container-wrapper {
   display: flex;
   height: 100%;
   width: 90%;
 }
-.main-container .container-wrapper .image-wrapper, .main-container .container-wrapper .details-wrapper {
+.main-container .container-wrapper .image-wrapper {
   display: flex;
-  height: 100%;
   width: 50vw;
 }
-.main-container .container-wrapper .image-wrapper .image-slider, .main-container .container-wrapper .details-wrapper .image-slider, .main-container .container-wrapper .image-wrapper .image-div, .main-container .container-wrapper .details-wrapper .image-div {
-  height: 65vh;
+.main-container .container-wrapper .image-wrapper .image-slider {
   width: 15vw;
   margin: 2px;
   background-color: #3EB489;
 }
-.main-container .container-wrapper .image-wrapper .image-div, .main-container .container-wrapper .details-wrapper .image-div {
+.main-container .container-wrapper .image-wrapper .image-div {
+  margin: 2px;
   width: 34vw;
 }
-.main-container .container-wrapper .image-wrapper .image-div .image, .main-container .container-wrapper .details-wrapper .image-div .image {
+.main-container .container-wrapper .image-wrapper .image-div .image {
   height: 100%;
   width: 100%;
 }
 .main-container .container-wrapper .details-wrapper {
   display: flex;
   flex-direction: column;
+  width: 50vw;
 }
 .main-container .container-wrapper .details-wrapper .product-details {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 40vh;
   width: 100%;
 }
 .main-container .container-wrapper .details-wrapper .product-details .name-with-detail {
-  height: 25vh;
   width: 100%;
   padding: 5px;
 }
@@ -1091,7 +751,6 @@ body .home_div .footer_wrapper {
   margin-bottom: 5px;
 }
 .main-container .container-wrapper .details-wrapper .product-details .product-id-rating .product-id, .main-container .container-wrapper .details-wrapper .product-details .product-id-rating .product-rating {
-  height: 100%;
   width: 40%;
   padding: 5px;
 }
@@ -1131,6 +790,75 @@ body .home_div .footer_wrapper {
   color: #000;
 }
 
+@media screen and (min-width: 280px) and (max-width: 476px) {
+  .main-container .container-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .main-container .container-wrapper .image-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  .main-container .container-wrapper .details-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .main-container .container-wrapper .image-wrapper .image-slider {
+    width: 100%;
+    height: 60px;
+  }
+
+  .main-container .container-wrapper .image-wrapper .image-div {
+    width: 90%;
+  }
+
+  .main-container .container-wrapper .details-wrapper .product-details .product-id-rating {
+    height: 15px;
+    width: 100%;
+  }
+
+  .main-container .container-wrapper .details-wrapper .product-details .product-id-rating .product-id,
+.main-container .container-wrapper .details-wrapper .product-details .product-id-rating .product-rating {
+    width: 55%;
+    padding-left: 5px;
+    font-size: 1rem;
+    /* font-weight: 400; */
+  }
+
+  .main-container .container-wrapper .details-wrapper .product-details .product-id-rating .product-rating {
+    width: 45%;
+  }
+
+  .main-container .container-wrapper .details-wrapper .product-details .product-price {
+    height: 25px;
+  }
+
+  .main-container .container-wrapper .details-wrapper .buying-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 65px;
+  }
+
+  .main-container .container-wrapper .details-wrapper .buying-wrapper .add-buy-container {
+    height: 55px;
+    width: 90%;
+  }
+
+  .main-container .container-wrapper .details-wrapper .buying-wrapper .add-buy-container .add-cart,
+.main-container .container-wrapper .details-wrapper .buying-wrapper .add-buy-container .buy-now {
+    height: 45px;
+    width: 120px;
+    border-radius: 0.8rem;
+  }
+}
 * {
   margin: 0;
   padding: 0;

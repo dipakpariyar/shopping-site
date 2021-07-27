@@ -6,6 +6,7 @@ import './styles/index.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import 'react-multi-carousel/lib/styles.css';
 import ProductDetails from './screens/product-details';
+import Test from './screens/TestComponent';
 
 function App() {
 
@@ -14,7 +15,7 @@ function App() {
      <BrowserRouter>
      <Route exact path='/' component={Home} />
      <Route exact path='/details/:productId' component={ProductDetails} />
-     
+     <Route exact path="/test"  component={Test} />
      </BrowserRouter>
      
     </div>

@@ -1,9 +1,8 @@
 import React from 'react'
-import Carousel from '../Carousel/Horizontalcarousel'
+import DetailCard from '../Carousel/DetailCard'
 
-export default function Highlights() {
-
-  const data = [
+export default function SimilarProduct() {
+  const data1 = [
     '/assets/images/fan.jpg',
     '/assets/images/cooker.jpg',
     '/assets/images/heater.jpg',
@@ -11,25 +10,25 @@ export default function Highlights() {
     '/assets/images/mpi.jpg',
     '/assets/images/blender.jpg',
   ];
-
   return (
-    <div className="highlights_div">
-      <div className="highlight_text">
-        <h2 className="text_div">Highlights</h2>
+    <div>
+       <div className="highlight_text">
+        <h2 className="text_div">Similar Product</h2>
       </div>
 
       <div className="first_div">
 
 
         <div className="first_card">
+          <DetailCard data1={data1} />
 
-          <Carousel data={data} />
+
         </div>
 
 
 
       </div>
-
     </div>
   )
 }
+

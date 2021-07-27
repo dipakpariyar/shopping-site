@@ -5,13 +5,17 @@ import StarRating from '../../common/Carousel/StarRating';
 import Img from '../../images/fan.jpg';
 import Features from './Features';
 import Specifications from './Specifications';
+import Overviews from './Overviews';
+import SimilarProduct from '../../common/similar-product/SimilarProduct';
 
 export default class index extends PureComponent {
   render() {
-    console.log('this product dteila props', this.props)
+    // console.info('this product dteila props', Accordion)
     return (
       <div>
-        <Header />
+        <div className="head_wrapper" style={{ zIndex: 1, position: "fixed", top: "0", }}>
+          <Header />
+        </div>
 
         <div className="main-container">
 
@@ -70,9 +74,15 @@ export default class index extends PureComponent {
 
         </div>
 
+       
+
         <Features />
         <Specifications />
-        <Footer />
+        <Overviews />
+        {/* <SimilarProduct /> */}
+        <div className="foot_wrapper">
+          <Footer />
+        </div>
       </div>
     )
   }

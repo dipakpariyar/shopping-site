@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import StarRatings from 'react-star-ratings';
 
 class StarRating extends React.Component {
-  const 
+  
   constructor() {
     super();
 
@@ -12,7 +12,7 @@ class StarRating extends React.Component {
     };
   }
 
-  changeRating = (value) => {
+ changeRating = (value) => {
     console.log(value);
     const { rating } = this.state;
     const extactRating = Math.floor(rating);
