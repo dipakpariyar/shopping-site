@@ -18,4 +18,5 @@ export default {
     res = res.map((obj) => ({ ...obj, brandImageUrl: `${ENDPOINT}/brand_image/${obj.brandImageUrl}` }));
     return res;
   },
+
 };
