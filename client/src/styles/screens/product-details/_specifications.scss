@@ -1,0 +1,126 @@
+.product_specification{
+  width: 100%;
+  margin-top: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+  // border: 1px solid red;
+  .specifiacation_shadow{
+    // border: 1px solid black;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-bottom: 10%;
+    box-shadow:0 0 4px 1px #666;
+    .pro_category{
+      width: 100%;
+      margin-top: 25px;
+      .cat_title{
+        font-size: 1.5rem;
+        font-weight: 500;
+        // margin-top: 15px;
+
+
+      }
+      .pro_installation{
+        font-size: 1rem;
+        font-weight: 500;
+        margin-top: 10px;
+      }
+      .i_type{
+        font-size: 1rem;
+        font-weight: 200;
+        margin-top: 5px;
+        color: #666;
+      }
+      
+    }
+
+    .pro_features{
+      width: 100%;
+      margin-top: 25px;
+      .fe_title{
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-top: 15px;
+      }
+        .fe_items{
+          display: flex;
+          justify-content: space-between;
+         .items{
+          font-size: 1rem;
+          font-weight: 500;
+          margin-top: 10px;
+          width: 30%;
+    
+         }
+       
+        }
+        .fe_items_ans{  
+          display: flex;
+          justify-content: space-between;
+          .i_ans{
+            font-size: 1rem;
+            font-weight: 200;
+            margin-top: 5px;
+            color: #666;
+            width: 30%;
+            // background: orangered;
+            }
+           
+        }
+
+      
+    }
+
+    .phy_attributes{
+      width: 65%;
+      margin-top: 25px;
+      .fe_title{
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-top: 15px;
+      }
+        .fe_items{
+          display: flex;
+          justify-content: space-between;
+         
+         .items{
+          font-size: 1rem;
+          font-weight: 500;
+          margin-top: 10px;
+          // background: red;
+          width: 45%;
+    
+         }
+       
+        }
+        .fe_items_ans{  
+          display: flex;
+          justify-content: space-between;
+          .i_ans{
+            font-size: 1rem;
+            font-weight: 200;
+            margin-top: 5px;
+            color: #666;
+            width: 45%;
+            }
+           
+        }
+
+      
+    }
+
+
+
+
+  }
+}
+
+@media screen and (max-width:360px){
+  .product_specification .specifiacation_shadow .pro_features .fe_items_ans .i_ans {
+    font-size: 1rem;
+    font-weight: 200;
+    margin-top: 5px;
+    color: #666;
+    width: 33%;
+}
+}
