@@ -15,9 +15,10 @@ export default class index extends PureComponent {
     const data=['/assets/graphics/images/fan.jpg']
     return (
       <div>
-        <div className="head_wrapper" style={{ zIndex: 1, position: "fixed", top: "0", width:"100%" }}>
-          <Header />
-        </div>
+        {/* <div className="head_wrapper" style={{ zIndex: 2, position: "fixed", top: "0", width:"100%" }}>
+         
+        </div> */}
+        <Header />
 
         <div className="main-container">
 
@@ -76,7 +77,7 @@ export default class index extends PureComponent {
 
         </div>
 
-        <div className="accordion_div" style={{width:"90%"}}>
+        <div className="accordion_div" style={{width:"90%", minHeight: '90vh'}}>
         <Accordion defaultActiveKey="0">
         <Accordion.Item eventKey="1">
           <Accordion.Header>

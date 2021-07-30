@@ -5,6 +5,7 @@ import { DropdownButton, Dropdown } from 'react-bootstrap';
 
 export default function Header() {
   return (
+    <div className="header_wrapper">
     <div className="header_div">
       <div className="logo">
         <img src="/assets/graphics/icons/home.jpg" className="logo_icon" alt="" />
@@ -49,6 +50,7 @@ export default function Header() {
 
         </div> */}
       </div>
+    </div>
     </div>
   )
 }
