@@ -555,7 +555,7 @@ body .home_div .footer_wrapper {
   align-items: center;
   justify-content: space-around;
   height: 100%;
-  width: 90%;
+  width: 100%;
   box-shadow: 0 0 4px 1px #666;
 }
 .product_features .features_wrapper .title {
@@ -703,24 +703,26 @@ body .home_div .footer_wrapper {
   justify-content: center;
   width: 100%;
   margin-top: 97px;
+  margin-bottom: 10px;
 }
 .main-container .container-wrapper {
   display: flex;
-  height: 100%;
   width: 90%;
 }
 .main-container .container-wrapper .image-wrapper {
   display: flex;
-  width: 50vw;
+  width: 50%;
 }
 .main-container .container-wrapper .image-wrapper .image-slider {
-  width: 15vw;
+  height: 350px;
+  width: 20%;
   margin: 2px;
   background-color: #3EB489;
 }
 .main-container .container-wrapper .image-wrapper .image-div {
+  height: 350px;
   margin: 2px;
-  width: 34vw;
+  width: 80%;
 }
 .main-container .container-wrapper .image-wrapper .image-div .image {
   height: 100%;
@@ -728,14 +730,16 @@ body .home_div .footer_wrapper {
 }
 .main-container .container-wrapper .details-wrapper {
   display: flex;
+  height: 350px;
   flex-direction: column;
-  width: 50vw;
+  width: 50%;
 }
 .main-container .container-wrapper .details-wrapper .product-details {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   width: 100%;
+  margin: 2px;
 }
 .main-container .container-wrapper .details-wrapper .product-details .name-with-detail {
   width: 100%;
@@ -746,40 +750,35 @@ body .home_div .footer_wrapper {
 }
 .main-container .container-wrapper .details-wrapper .product-details .product-id-rating {
   display: flex;
-  height: 5vh;
   width: 85%;
-  margin-bottom: 5px;
 }
-.main-container .container-wrapper .details-wrapper .product-details .product-id-rating .product-id, .main-container .container-wrapper .details-wrapper .product-details .product-id-rating .product-rating {
+.main-container .container-wrapper .details-wrapper .product-details .product-id-rating .product-id {
   width: 40%;
-  padding: 5px;
+  padding: 5px 0 0 5px;
 }
 .main-container .container-wrapper .details-wrapper .product-details .product-id-rating .product-rating {
   width: 50%;
 }
 .main-container .container-wrapper .details-wrapper .product-details .product-price {
-  height: 5vh;
   width: 100%;
-  padding: 5px;
+  padding: 0 0 0 5px;
 }
 .main-container .container-wrapper .details-wrapper .buying-wrapper {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
-  height: 15vh;
+  align-items: center;
   width: 100%;
-  margin-top: 5px;
+  margin-top: 30px;
 }
 .main-container .container-wrapper .details-wrapper .buying-wrapper .add-buy-container {
   display: flex;
   justify-content: space-around;
-  height: 10vh;
   width: 80%;
 }
 .main-container .container-wrapper .details-wrapper .buying-wrapper .add-buy-container .add-cart, .main-container .container-wrapper .details-wrapper .buying-wrapper .add-buy-container .buy-now {
-  height: 7vh;
-  width: 12vw;
-  border-radius: 1.5rem;
+  height: 45px;
+  width: 145px;
+  border-radius: 0.5rem;
   color: #fff;
   background-color: #3EB489;
   border: none;
@@ -790,7 +789,12 @@ body .home_div .footer_wrapper {
   color: #000;
 }
 
-@media screen and (min-width: 280px) and (max-width: 476px) {
+.accordion_div {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+@media screen and (min-width: 280px) and (max-width: 480px) {
   .main-container .container-wrapper {
     display: flex;
     flex-direction: column;
@@ -816,11 +820,12 @@ body .home_div .footer_wrapper {
   }
 
   .main-container .container-wrapper .image-wrapper .image-div {
-    width: 90%;
+    height: 280px;
+    margin: 0px;
+    width: 100%;
   }
 
   .main-container .container-wrapper .details-wrapper .product-details .product-id-rating {
-    height: 15px;
     width: 100%;
   }
 
@@ -836,15 +841,12 @@ body .home_div .footer_wrapper {
     width: 45%;
   }
 
-  .main-container .container-wrapper .details-wrapper .product-details .product-price {
-    height: 25px;
-  }
-
   .main-container .container-wrapper .details-wrapper .buying-wrapper {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     height: 65px;
+    margin-top: 0;
   }
 
   .main-container .container-wrapper .details-wrapper .buying-wrapper .add-buy-container {
@@ -856,7 +858,7 @@ body .home_div .footer_wrapper {
 .main-container .container-wrapper .details-wrapper .buying-wrapper .add-buy-container .buy-now {
     height: 45px;
     width: 120px;
-    border-radius: 0.8rem;
+    border-radius: 0.5rem;
   }
 }
 * {

@@ -6,12 +6,12 @@ export default function Popularbrand() {
 
 
   const data  = [
-    '/assets/popular brand/baltra.jpg',
-    '/assets/popular brand/godrej.jpg',
-    '/assets/popular brand/sony.jpeg',
-    '/assets/popular brand/philips.png',
-    '/assets/popular brand/godrej.jpeg',
-    '/assets/popular brand/philips.jpg',
+    '/assets/graphics/popular_brand/baltra.jpg',
+    '/assets/graphics/popular_brand/godrej.jpg',
+    '/assets/graphics/popular_brand/sony.jpeg',
+    '/assets/graphics/popular_brand/philips.png',
+    '/assets/graphics/popular_brand/godrej.jpeg',
+    '/assets/graphics/popular_brand/philips.jpg',
  ];
 
 

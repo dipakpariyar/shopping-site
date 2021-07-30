@@ -2,18 +2,20 @@ import React, { PureComponent } from 'react';
 import Footer from '../../common/footer/Footer';
 import Header from '../../common/header/Header';
 import StarRating from '../../common/Carousel/StarRating';
-// import Img from '../../images/fan.jpg';
+// import Img from '../../../src/assets/graphics/images/fan.jpg';
 import Features from './Features';
 import Specifications from './Specifications';
 import Overviews from './Overviews';
 import SimilarProduct from '../../common/similar-product/SimilarProduct';
+import Accordion from 'react-bootstrap/Accordion';
 
 export default class index extends PureComponent {
   render() {
     // console.info('this product dteila props', Accordion)
+    const data=['/assets/graphics/images/fan.jpg']
     return (
       <div>
-        <div className="head_wrapper" style={{ zIndex: 1, position: "fixed", top: "0", }}>
+        <div className="head_wrapper" style={{ zIndex: 1, position: "fixed", top: "0", width:"100%" }}>
           <Header />
         </div>
 
@@ -25,7 +27,7 @@ export default class index extends PureComponent {
             <div className="image-wrapper">
               <div className="image-slider"></div>
               <div className="image-div">
-                {/* <img src={Img} className="image" alt="" /> */}
+                <img src={data} className="image" alt="" />
               </div>
             </div>
 
@@ -74,11 +76,51 @@ export default class index extends PureComponent {
 
         </div>
 
+        <div className="accordion_div" style={{width:"90%"}}>
+        <Accordion defaultActiveKey="0">
+        <Accordion.Item eventKey="1">
+          <Accordion.Header>
+            <div className="title">
+            <h3><b>Key Features</b></h3>
+          </div>
+          </Accordion.Header>
+          <Accordion.Body>
+          <Features />
+          </Accordion.Body>
+        </Accordion.Item>
+      </Accordion>
+
+      <Accordion defaultActiveKey="0">
+        <Accordion.Item eventKey="2">
+          <Accordion.Header><div className="spe_title">
+          <h3><b>Specification</b></h3>
+        </div></Accordion.Header>
+          <Accordion.Body>
+          <Specifications />
+          </Accordion.Body>
+        </Accordion.Item>
+      </Accordion>
+
+
+      <Accordion defaultActiveKey="0">
+        <Accordion.Item eventKey="1">
+          <Accordion.Header>
+            <div className="overviews_title"><h3><b>Overview</b></h3></div>
+          </Accordion.Header>
+          <Accordion.Body>
+          <Overviews />
+          </Accordion.Body>
+        </Accordion.Item>
+      </Accordion>
+
+      
+        </div>
+
        
 
-        <Features />
-        <Specifications />
-        <Overviews />
+        
+  
+       
         {/* <SimilarProduct /> */}
         <div className="foot_wrapper">
           <Footer />

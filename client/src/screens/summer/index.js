@@ -3,12 +3,12 @@ import Carousel from '../../common/Carousel/Horizontalcarousel';
 
 export default function Summer() {
   const data=[
-    {img:'/assets/summer/blackfan.jpg', name:"pruduct1"},
-    {img:'/assets/summer/air conditioner.jpg', name: 'product2'},
-    {img:'/assets/summer/dc-fan.jpg', name: 'product3'},
-    {img:'/assets/summer/sma.jpg', name: 'product4'},
-    {img:'/assets/summer/window-airconditioner.jpg', name: 'product5'},
-    {img:'/assets/summer/circulator fan.jpg', name: 'product6'}
+    {img:'/assets/graphics/summer/blackfan.jpg', name:"pruduct1"},
+    {img:'/assets/graphics/summer/air conditioner.jpg', name: 'product2'},
+    {img:'/assets/graphics/summer/dc-fan.jpg', name: 'product3'},
+    {img:'/assets/graphics/summer/sma.jpg', name: 'product4'},
+    {img:'/assets/graphics/summer/window-airconditioner.jpg', name: 'product5'},
+    {img:'/assets/graphics/summer/circulator fan.jpg', name: 'product6'}
   ];
   return (
     <div className="summer_brand">
@@ -18,7 +18,7 @@ export default function Summer() {
 
 
 <div className="summer_carousel_div">
- <div className="summer_carousel">
+ <div className="summer_carousel"> 
  <Carousel  data={data} cardType="detail" /> 
  </div>
 </div >

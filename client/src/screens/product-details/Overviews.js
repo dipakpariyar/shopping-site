@@ -5,7 +5,7 @@ export default function Overviews() {
     <div>
       <div className="product_overviews">
         <div className="overviews_shadow">
-          <div className="overviews_title"><h3><b>Overview</b></h3></div>
+          
           <div className="overviews_content">
             <p>
             Get excellent ventilation in your room having dimension as 430x170x430 mm (LxWxH) with the Croma CRF0026 Pivot Fan. 

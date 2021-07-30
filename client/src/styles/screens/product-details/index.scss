@@ -4,39 +4,35 @@
 .main-container{
   display: flex;
   justify-content: center;
-  // height: 70vh;
   width: 100%;
-  // box-shadow: 3rem #999;
   // border: 2px solid red;
   margin-top: 97px;
+  margin-bottom: 10px;
 
   .container-wrapper{
     display: flex;
-    height: 100%;
+    // height: 100%;
     width: 90%;
-    // background: #fff;
-    // box-shadow: 0 0 2px 2px  #666;
     // border: 1px solid blue;
+
     //left side container
   .image-wrapper{
     display: flex;
-    // height: 100%;
-    width: 50vw;
+    width: 50%;
     // border: 2px solid green;
 
     .image-slider{
-      // height: 65vh;
-      width: 15vw;
+      height: 350px;
+      width: 20%;
       margin: 2px;
       // border: 1px solid black;
       background-color: #3EB489
     }
 
     .image-div{
-      // @extend .image-slider;
+      height: 350px;
       margin: 2px;
-      // border: 1px solid black;
-      width: 34vw;
+      width: 80%; 
       // border: 1px solid orangered;
       .image{
         height: 100%;
@@ -51,11 +47,11 @@
 //right side container
 
   .details-wrapper{
-    // @extend .image-wrapper;
     display: flex;
+    height: 350px;
     flex-direction: column;
-    width: 50vw;
-    // border: 2px solid green;
+    width: 50%;
+    // border: 2px solid rgb(128, 0, 11);
     
 
 //upper side container
@@ -64,12 +60,11 @@
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      // height: 40vh;
       width: 100%;
+      margin: 2px;
       // border: 2px solid black;
   
       .name-with-detail{
-        // height: 25vh;
         width: 100%;
         padding: 5px;
         // border: 1px solid red;
@@ -80,28 +75,25 @@
   
       .product-id-rating{
         display: flex;
-        height: 5vh;
         width: 85%;
         // border: 2px solid green;
-        margin-bottom: 5px;
+        // margin-bottom: 5px;
         .product-id{
-          // height: 100%;
           width: 40%;
-          padding: 5px;
-          // text-align: justify;
-          // border: 1px solid skyblue;
+          padding: 5px 0 0 5px;
+          // border: 1px solid rgb(238, 42, 7);
         }
         .product-rating{
           width: 50%;
           // border: 1px solid black;
-          @extend .product-id;
+        
         }
       }
   
       .product-price{
-        height: 5vh;
+        // height: 5vh;
         width: 100%;
-        padding: 5px;
+        padding: 0 0 0 5px;
         // border: 1px solid darkcyan;
       }
   
@@ -112,23 +104,22 @@
     .buying-wrapper{
       display: flex;
       justify-content: center;
-      align-items: flex-end;
-      height: 15vh;
+      align-items: center;
       width: 100%;
+      margin-top: 30px;
       // border: 1px solid pink;
-      margin-top: 5px;
 
       .add-buy-container{
         display: flex;
         justify-content: space-around;
-        height: 10vh;
+        // height: 10vh;
         width: 80%;
         // border: 1px solid aqua;
 
         .add-cart{
-            height: 7vh;
-            width: 12vw;
-            border-radius: 1.5rem;
+            height: 45px;
+            width: 145px;
+            border-radius: 0.5rem;
             color: #fff;
             background-color: #3EB489;
             border: none;
@@ -149,13 +140,18 @@
   }
   }
 
- 
-
 
 
 }
 
-@media screen and (min-width:280px) and (max-width:476px){
+
+.accordion_div{
+  margin-left: 5%;
+  margin-right: 5%;
+
+}
+
+@media screen and (min-width:280px) and (max-width:480px){
   // .main-container{
   //   height: 40vh;
   //   width: 100%;
@@ -184,11 +180,13 @@
   height: 60px;
 }
 .main-container .container-wrapper .image-wrapper .image-div{
-  width: 90%;
+  height: 280px;
+  margin: 0px;
+  width: 100%;
 }
 .main-container .container-wrapper .details-wrapper 
 .product-details .product-id-rating{
-  height: 15px;
+  // height: 0px;
   width: 100%;
 }
 
@@ -210,7 +208,7 @@
 
 .main-container .container-wrapper .details-wrapper 
 .product-details .product-price{
-  height: 25px;
+  // height: 25px;
 }
 
 .main-container .container-wrapper .details-wrapper .buying-wrapper{
@@ -218,6 +216,7 @@
   justify-content: center;
   align-items: flex-start;
   height: 65px;
+  margin-top: 0;
 }
 
 .main-container .container-wrapper .details-wrapper .buying-wrapper .add-buy-container{
@@ -230,7 +229,7 @@
 .buying-wrapper .add-buy-container .buy-now{
   height: 45px;
   width: 120px;
-  border-radius: 0.8rem;
+  border-radius: 0.5rem;
 }
 
 }

@@ -4,12 +4,12 @@ import Carousel from '../Carousel/Horizontalcarousel'
 export default function Highlights() {
 
   const data = [
-    '/assets/images/fan.jpg',
-    '/assets/images/cooker.jpg',
-    '/assets/images/heater.jpg',
-    '/assets/images/iron.jpg',
-    '/assets/images/mpi.jpg',
-    '/assets/images/blender.jpg',
+    '/assets/graphics/images/fan.jpg',
+    '/assets/graphics/images/cooker.jpg',
+    '/assets/graphics/images/heater.jpg',
+    '/assets/graphics/images/iron.jpg',
+    '/assets/graphics/images/mpi.jpg',
+    '/assets/graphics/images/blender.jpg',
   ];
 
   return (

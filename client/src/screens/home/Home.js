@@ -30,7 +30,6 @@ export default function Home() {
         <Slider />
       </div>
 
-
       <div className="highlights">
 
         <Highlights />
