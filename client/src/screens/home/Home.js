@@ -8,7 +8,6 @@ import axios from 'axios';
 import Summer from '../summer';
 import Winter from '../winter';
 
-
 export default function Home() {
   useEffect(() => {
   fetchData();
