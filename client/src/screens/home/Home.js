@@ -8,7 +8,6 @@ import axios from 'axios';
 import Summer from '../summer';
 import Winter from '../winter';
 
-
 export default function Home() {
   useEffect(() => {
   fetchData();
@@ -21,17 +20,17 @@ export default function Home() {
   return (
     <div className="home_div">
       <div className="header_wrapper">
-
-
         <Header />
       </div>
 
       <div className="slider_div">
         <Slider />
       </div>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 70dd026e8d90977783564282be4d97be9961a452
       <div className="highlights">
-
         <Highlights />
       </div>
 
