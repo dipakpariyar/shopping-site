@@ -26,10 +26,6 @@ export default function Home() {
       <div className="slider_div">
         <Slider />
       </div>
-<<<<<<< HEAD
-
-=======
->>>>>>> 70dd026e8d90977783564282be4d97be9961a452
       <div className="highlights">
         <Highlights />
       </div>
