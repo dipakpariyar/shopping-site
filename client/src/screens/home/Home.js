@@ -27,7 +27,6 @@ export default function Home() {
         <Slider />
       </div>
       <div className="highlights">
-        <h1>this for test</h1>
         <Highlights />
       </div>
 
