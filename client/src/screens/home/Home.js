@@ -20,18 +20,14 @@ export default function Home() {
   return (
     <div className="home_div">
       <div className="header_wrapper">
-
-
         <Header />
       </div>
 
       <div className="slider_div">
         <Slider />
       </div>
-
-
       <div className="highlights">
-
+        <h1>this for test</h1>
         <Highlights />
       </div>
 
