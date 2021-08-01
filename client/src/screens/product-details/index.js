@@ -12,7 +12,7 @@ import Accordion from 'react-bootstrap/Accordion';
 export default class index extends PureComponent {
   render() {
     // console.info('this product dteila props', Accordion)
-    const data=['/assets/graphics/images/fan.jpg']
+    
     return (
       <div>
         {/* <div className="head_wrapper" style={{ zIndex: 2, position: "fixed", top: "0", width:"100%" }}>
@@ -28,7 +28,7 @@ export default class index extends PureComponent {
             <div className="image-wrapper">
               <div className="image-slider"></div>
               <div className="image-div">
-                <img src={data} className="image" alt="" />
+                {/* <img src='/assets/graphics/images/fan.jpg' className="image" alt="" /> */}
               </div>
             </div>
 
