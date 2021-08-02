@@ -5,9 +5,9 @@ export default function Specifications() {
 
     <div className="product_specification">
       <div className="specifiacation_shadow">
-        <div className="spe_title">
+        {/* <div className="spe_title">
           <h3><b>Specification</b></h3>
-        </div>
+        </div> */}
 
         <div className="wrapper">
 

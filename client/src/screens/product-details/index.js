@@ -82,7 +82,7 @@ export default class index extends PureComponent {
         <Accordion.Item eventKey="1">
           <Accordion.Header>
             <div className="title">
-            <h3><b>Key Features</b></h3>
+            <h4><b>Key Features</b></h4>
           </div>
           </Accordion.Header>
           <Accordion.Body>
@@ -94,7 +94,7 @@ export default class index extends PureComponent {
       <Accordion defaultActiveKey="0">
         <Accordion.Item eventKey="2">
           <Accordion.Header><div className="spe_title">
-          <h3><b>Specification</b></h3>
+          <h4><b>Specification</b></h4>
         </div></Accordion.Header>
           <Accordion.Body>
           <Specifications />
@@ -106,7 +106,7 @@ export default class index extends PureComponent {
       <Accordion defaultActiveKey="0">
         <Accordion.Item eventKey="1">
           <Accordion.Header>
-            <div className="overviews_title"><h3><b>Overview</b></h3></div>
+            <div className="overviews_title"><h4><b>Overview</b></h4></div>
           </Accordion.Header>
           <Accordion.Body>
           <Overviews />

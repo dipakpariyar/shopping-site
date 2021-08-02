@@ -556,13 +556,10 @@ body .home_div .footer_wrapper {
   justify-content: space-around;
   height: 100%;
   width: 100%;
-  box-shadow: 0 0 4px 1px #666;
 }
 .product_features .features_wrapper .title {
   display: flex;
   align-items: flex-end;
-  height: 9vh;
-  width: 95%;
 }
 .product_features .features_wrapper .features_list {
   height: 30vh;
@@ -579,7 +576,6 @@ body .home_div .footer_wrapper {
   padding-left: 2.5%;
   padding-right: 2.5%;
   padding-bottom: 10%;
-  box-shadow: 0 0 4px 1px #666;
 }
 .product_specification .specifiacation_shadow .pro_category {
   width: 100%;
@@ -681,7 +677,6 @@ body .home_div .footer_wrapper {
   flex-direction: column;
   align-items: center;
   width: 90%;
-  box-shadow: 0 0 4px 1px #666;
 }
 .product_overviews .overviews_shadow .overviews_title {
   display: flex;
