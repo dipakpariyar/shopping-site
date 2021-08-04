@@ -17,7 +17,8 @@ export default class Test extends React.Component {
         largeImage: {
             src: url,
             width: 300,
-            height: 300
+            height: 300,
+            shouldHideHintAfterFirstActivation: false,
         }
     }} />
     </div>
