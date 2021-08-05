@@ -5,7 +5,7 @@ pipeline {
                   steps {
                         sh '''#!/bin/bash
                               echo "===Installing Dependencies==="
-                              yarn add prebuild-install
+                              apt-get install build-essential
                               yarn install
                         '''
                   }
