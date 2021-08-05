@@ -2,7 +2,6 @@ import React from 'react'
 import ReactImageMagnify from 'react-image-magnify';
 import HorizontalCrousal from '../../common/Carousel/Horizontalcarousel';
 
-
 const url = '/assets/graphics/images/fan.jpg';
 
 const data = [

@@ -18,9 +18,7 @@ pipeline {
                   }
             }
             stage('Deploy Staging') {
-                  steps {
-                        echo "=== Deploying in Staging Area ==="
-                  }
+                  build job: 'Deploy_To_Staging_Env'
             }
             stage('Deploy Production') {
                   steps {
