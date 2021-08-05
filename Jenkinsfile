@@ -18,7 +18,9 @@ pipeline {
                   }
             }
             stage('Deploy Staging') {
-                  build job: 'Deploy_To_Staging_Env'
+                  steps {
+                        build job: 'Deploy_To_Staging_Env'
+                  }
             }
             stage('Deploy Production') {
                   steps {
