@@ -4,7 +4,7 @@ pipeline {
             stage('Init') {
                   steps {
                         echo '==== Installing all the dependecies ===='
-                        yarn install
+                        node --version
                   }
             }
             stage('Build') {
