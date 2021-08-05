@@ -6,7 +6,6 @@ pipeline {
                         echo '==== Installing all the dependecies ===='
                         node --version
                         npm --version
-                        yarn --version
                   }
             }
             stage('Build') {
