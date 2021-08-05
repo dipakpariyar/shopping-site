@@ -8,6 +8,7 @@ import Specifications from './Specifications';
 import Overviews from './Overviews';
 import SimilarProduct from '../../common/similar-product/SimilarProduct';
 import Accordion from 'react-bootstrap/Accordion';
+import Collapse from '../collapsecomponent/index';
 
 export default class index extends PureComponent {
   render() {
@@ -15,20 +16,36 @@ export default class index extends PureComponent {
     
     return (
       <div>
-        {/* <div className="head_wrapper" style={{ zIndex: 2, position: "fixed", top: "0", width:"100%" }}>
-         
-        </div> */}
         <Header />
-
         <div className="main-container">
 
           {/* //left side container */}
           <div className="container-wrapper">
 
             <div className="image-wrapper">
-              <div className="image-slider"></div>
+              {/* <div className="image-slider">
+              
+              </div> */}
               <div className="image-div">
                 {/* <img src='/assets/graphics/images/fan.jpg' className="image" alt="" /> */}
+                {/* <div style={{ height: 400, width: 400 }}>
+                  <ReactImageMagnify {...{
+                    smallImage: {
+                            alt: 'Wristwatch by Ted Baker London',
+                            isFluidWidth: true,
+                            src: url,
+                            enlargedImagePortalId: 'portal',
+                        },
+                        largeImage: {
+                            src: url,
+                            width: 300,
+                            height: 300,
+                            shouldHideHintAfterFirstActivation: false,
+                        }
+                        
+                    }} />
+                </div> */}
+                <Collapse />
               </div>
             </div>
 
@@ -78,10 +95,10 @@ export default class index extends PureComponent {
         </div>
 
         <div className="accordion_div" style={{width:"90%", minHeight: '90vh'}}>
-        <Accordion defaultActiveKey="0">
-        <Accordion.Item eventKey="1">
-          <Accordion.Header>
-            <div className="title">
+        <Accordion defaultActiveKey="0" className="collapse_div" >
+        <Accordion.Item eventKey="1" >
+          <Accordion.Header >
+            <div className="title" style={{color:"black"}}>
             <h4><b>Key Features</b></h4>
           </div>
           </Accordion.Header>
@@ -93,7 +110,7 @@ export default class index extends PureComponent {
 
       <Accordion defaultActiveKey="0">
         <Accordion.Item eventKey="2">
-          <Accordion.Header><div className="spe_title">
+          <Accordion.Header ><div className="spe_title" style={{color:"black"}}>
           <h4><b>Specification</b></h4>
         </div></Accordion.Header>
           <Accordion.Body>
@@ -106,7 +123,8 @@ export default class index extends PureComponent {
       <Accordion defaultActiveKey="0">
         <Accordion.Item eventKey="1">
           <Accordion.Header>
-            <div className="overviews_title"><h4><b>Overview</b></h4></div>
+                    <div className="overviews_title" style={{color:"black"}}>
+                <h4><b>Overview</b></h4></div>
           </Accordion.Header>
           <Accordion.Body>
           <Overviews />

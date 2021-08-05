@@ -148,6 +148,9 @@
 .accordion_div{
   margin-left: 5%;
   margin-right: 5%;
+  .collapse_div{
+    color: none;
+  }
 }
 @media screen and (min-width:280px) and (max-width:480px){
   // .main-container{

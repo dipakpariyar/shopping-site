@@ -333,7 +333,7 @@ body .home_div .footer_wrapper {
     margin-left: 8%;
   }
 
-  .header_div .form_div {
+  .header_wrapper .header_div .form_div {
     height: 15vh;
     width: 60vw;
     display: flex;
@@ -351,7 +351,7 @@ body .home_div .footer_wrapper {
     flex-direction: row;
   }
 
-  .header_div .form_div .input-search-button-div {
+  .header_wrapper .header_div .form_div .input-search-button-div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -363,14 +363,14 @@ body .home_div .footer_wrapper {
     display: none;
   }
 
-  .header_div .form_div .input-search-button-div .input-search-div #srch_btn {
+  .header_wrapper .header_div .form_div .input-search-button-div .input-search-div #srch_btn {
     height: 4.5vh;
     width: 15vw;
     border-radius: 0.4rem;
     border: none;
   }
 
-  .header_div .form_div .input-search-button-div .input-search-div .input_div {
+  .header_wrapper .header_div .form_div .input-search-button-div .input-search-div .input_div {
     padding: 1vw;
     margin-right: 3px;
     width: 43vw;
@@ -548,11 +548,11 @@ body .home_div .footer_wrapper {
   justify-content: center;
   height: 45vh;
   width: 100%;
+  padding-left: 2%;
 }
 .product_features .features_wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-around;
   height: 100%;
   width: 100%;
@@ -563,18 +563,14 @@ body .home_div .footer_wrapper {
 }
 .product_features .features_wrapper .features_list {
   height: 30vh;
-  width: 90%;
 }
 
 .product_specification {
   width: 100%;
   margin-top: 20px;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 2%;
 }
 .product_specification .specifiacation_shadow {
-  padding-left: 2.5%;
-  padding-right: 2.5%;
   padding-bottom: 10%;
 }
 .product_specification .specifiacation_shadow .pro_category {
@@ -670,13 +666,12 @@ body .home_div .footer_wrapper {
   display: flex;
   justify-content: center;
   width: 100%;
+  padding-left: 2%;
   margin-top: 5vh;
 }
 .product_overviews .overviews_shadow {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 90%;
 }
 .product_overviews .overviews_shadow .overviews_title {
   display: flex;
@@ -787,6 +782,9 @@ body .home_div .footer_wrapper {
 .accordion_div {
   margin-left: 5%;
   margin-right: 5%;
+}
+.accordion_div .collapse_div {
+  color: none;
 }
 
 @media screen and (min-width: 280px) and (max-width: 480px) {

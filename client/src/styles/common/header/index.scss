@@ -116,7 +116,7 @@
     margin-left: 8%;
     // border: 1px solid black;
 }
-    .header_div .form_div {
+    .header_wrapper .header_div .form_div {
       height: 15vh;
       width: 60vw;
       display: flex;
@@ -134,7 +134,7 @@
       display: flex;
       flex-direction: row;
     }
-    .header_div .form_div .input-search-button-div {
+    .header_wrapper .header_div .form_div .input-search-button-div {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -146,14 +146,14 @@
     display: none;
 }
 
-.header_div .form_div .input-search-button-div .input-search-div #srch_btn {
+.header_wrapper .header_div .form_div .input-search-button-div .input-search-div #srch_btn {
   height: 4.5vh;
   width: 15vw;
   border-radius: 0.4rem;
   border: none;
 }
 
-.header_div .form_div .input-search-button-div .input-search-div .input_div {
+.header_wrapper .header_div .form_div .input-search-button-div .input-search-div .input_div {
   padding: 1vw;
   margin-right: 3px;
   width: 43vw;

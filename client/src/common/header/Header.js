@@ -2,7 +2,6 @@ import React from 'react'
 import { DropdownButton, Dropdown } from 'react-bootstrap';
 // import Cart from '../../icons/cart.png';
 // import Home from '../../icons/home.jpg';
-
 export default function Header() {
   return (
     <div className="header_wrapper">
