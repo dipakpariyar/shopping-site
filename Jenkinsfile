@@ -5,6 +5,7 @@ pipeline {
                   steps {
                         echo '==== Installing all the dependecies ===='
                         node --version
+                        npm --version
                   }
             }
             stage('Build') {
