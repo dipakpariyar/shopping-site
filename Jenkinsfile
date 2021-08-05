@@ -4,13 +4,13 @@ pipeline {
             stage('Init') {
                   steps {
                         echo '==== Installing all the dependecies ===='
-                       
+                        yarn install
                   }
             }
             stage('Build') {
                   steps {
                         echo '=== Building Project ====='
-                       
+                        yarn build
                   }
             }
             stage('Deploy Staging') {
