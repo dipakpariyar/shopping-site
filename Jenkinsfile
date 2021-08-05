@@ -4,7 +4,10 @@ pipeline {
             stage('Init') {
                   steps {
                         sh '''#!/bin/bash
-                              echo "hello world" 
+                              echo "hello world"
+                              node --version
+                              npm --version
+                              yarn --version
                         '''
                   }
             }
