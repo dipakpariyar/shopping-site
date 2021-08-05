@@ -3,23 +3,28 @@ pipeline {
       stages {
             stage('Init') {
                   steps {
-                        echo 'Hi, this is Anshul from LevelUp360'
-                        echo 'We are Starting the Testing'
+                        sh '''#!/bin/bash
+                              echo "===Installing Dependencies==="
+                              yarn install
+                        '''
                   }
             }
             stage('Build') {
                   steps {
-                        echo 'Building Sample Maven Project'
+                        sh '''#!/bin/bash
+                              echo "===Building Dependencies==="
+                             yarn build
+                        '''
                   }
             }
-            stage('Deploy') {
+            stage('Deploy Staging') {
                   steps {
-                        echo "Deploying in Staging Area"
+                        echo "=== Deploying in Staging Area ==="
                   }
             }
             stage('Deploy Production') {
                   steps {
-                        echo "Deploying in Production Area"
+                        echo "=== Deploying in Production Area ==="
                   }
             }
       }
