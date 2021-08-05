@@ -4,16 +4,17 @@ pipeline {
             stage('Init') {
                   steps {
                         sh '''#!/bin/bash
-                              echo "hello world"
-                              node --version
-                              npm --version
-                              yarn --version
+                              echo "===Installing Dependencies==="
+                             yarn install
                         '''
                   }
             }
             stage('Build') {
                   steps {
-                        echo '=== Building Project ====='
+                        sh '''#!/bin/bash
+                              echo "===Building Dependencies==="
+                             yarn build
+                        '''
                   }
             }
             stage('Deploy Staging') {
