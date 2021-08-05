@@ -13,10 +13,6 @@ export default function magnifycrousel() {
     'https://png.pngtree.com/thumb_back/fw800/back_our/20190620/ourmid/pngtree-818-home-appliances-festival-atmospheric-lights-red-background-image_158775.jpg'
   ];
   return (
-  
-
- 
-
       <div className="slide_div" style={{ width: 400, background: 'yellow' }}>
       <Carousel 
       showStatus={false} 

@@ -3,14 +3,38 @@ import Carousel from 'react-multi-carousel';
 import DetailCard from './DetailCard';
 import HighLightCard from './HighlightCard';
 
-
 export default function Cardimg(props) {
-  const { data, cardType } = props;
+  const { data, cardType, onCLickListner } = props;
   console.log('Cart type', cardType);
-  const customItem = cardType === 'detail' ? 4 : 3;
-  const halfItem = cardType === 'detail' ? 20 : 40;
-  const mobileItem= cardType== 'detail' ? 2 :1 ;
-  const halfMobileSize = cardType === 'detail' ? 0 : 45;
+  let customItem;
+  let halfItem;
+  let mobileItem;
+  let halfMobileSize;
+
+  let cards = [];
+  switch(cardType) {
+    case 'detail':
+      cards = data.map(d => <DetailCard detail={d} />);
+      customItem = 4;
+      halfItem = 20;
+      mobileItem=2;
+      halfMobileSize=0;
+      break;
+    case 'magnifyImage':
+      cards = data.map((d, idx) => <div onClick={() => onCLickListner(idx)} style={{ height: 200, width: 200}}><img src={d} style={{ height: '100%', width: '100' }}/></div>);
+      customItem = 4;
+      halfItem = 20;
+      mobileItem=2;
+      halfMobileSize=0;
+      break;
+    default:
+      cards = data.map(d => <HighLightCard img={d} />);
+      customItem= 3;
+      halfItem = 40;
+      mobileItem=1;
+      halfMobileSize=45;
+  }
+
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -35,11 +59,10 @@ export default function Cardimg(props) {
     }
   }
 
-  const cards = data.map(d => cardType === 'detail' ? <DetailCard detail={d} /> : <HighLightCard img={d} />);
 
   return (
     <div className="card-main-div">
-      <Carousel responsive={responsive} partialVisbile> 
+      <Carousel ssr responsive={responsive} partialVisbile> 
         {cards}
       </Carousel>
     </div>

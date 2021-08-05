@@ -8,7 +8,7 @@ import Specifications from './Specifications';
 import Overviews from './Overviews';
 import SimilarProduct from '../../common/similar-product/SimilarProduct';
 import Accordion from 'react-bootstrap/Accordion';
-import Collapse from '../collapsecomponent/index';
+import ImageMaginifier from '../collapsecomponent/index';
 
 export default class index extends PureComponent {
   render() {
@@ -23,40 +23,11 @@ export default class index extends PureComponent {
           <div className="container-wrapper">
 
             <div className="image-wrapper">
-              {/* <div className="image-slider">
-              
-              </div> */}
-              <div className="image-div">
-                {/* <img src='/assets/graphics/images/fan.jpg' className="image" alt="" /> */}
-                {/* <div style={{ height: 400, width: 400 }}>
-                  <ReactImageMagnify {...{
-                    smallImage: {
-                            alt: 'Wristwatch by Ted Baker London',
-                            isFluidWidth: true,
-                            src: url,
-                            enlargedImagePortalId: 'portal',
-                        },
-                        largeImage: {
-                            src: url,
-                            width: 300,
-                            height: 300,
-                            shouldHideHintAfterFirstActivation: false,
-                        }
-                        
-                    }} />
-                </div> */}
-                <Collapse />
+              <div className="image-div" style={{ height: 'auto'}}>
+                <ImageMaginifier />
               </div>
             </div>
-
-
-            {/* //right side container */}
-
             <div className="details-wrapper">
-
-
-              {/* //upper side container */}
-
               <div className="product-details">
                 <div className="name-with-detail">
                   <h1>DC Circulator Fan : SIF-SE10SC</h1>
@@ -131,15 +102,7 @@ export default class index extends PureComponent {
           </Accordion.Body>
         </Accordion.Item>
       </Accordion>
-
-      
         </div>
-
-       
-
-        
-  
-       
         {/* <SimilarProduct /> */}
         <div className="foot_wrapper">
           <Footer />
