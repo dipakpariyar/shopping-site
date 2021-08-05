@@ -4,17 +4,15 @@ pipeline {
             stage('Init') {
                   steps {
                         script {
-                              echo '==== Installing all the dependecies ===='
-                              node --version
-                              npm --version
+                              sh  echo '==== Installing all the dependecies ===='
+                              sh node --version
+                              sh npm --version
                         }
-                     
                   }
             }
             stage('Build') {
                   steps {
                         echo '=== Building Project ====='
-                        yarn build
                   }
             }
             stage('Deploy Staging') {
