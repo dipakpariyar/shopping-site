@@ -3,9 +3,12 @@ pipeline {
       stages {
             stage('Init') {
                   steps {
-                       sh echo '==== Installing all the dependecies ===='
-                       sh node --version
-                        sh  npm --version
+                        script {
+                              echo '==== Installing all the dependecies ===='
+                              node --version
+                              npm --version
+                        }
+                     
                   }
             }
             stage('Build') {
