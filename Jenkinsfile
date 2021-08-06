@@ -30,7 +30,7 @@ pipeline {
                                def buildName = Jenkins.instance.getItemByFullName('Shopping_Site')
                                echo "Last success: ${buildName}"
                                echo "All builds: ${buildName.getBuilds().collect{ it.getNumber()}}"
-                               echo "Last build: ${buildName.getLastBuild()}"
+                               echo "Last build: ${buildName.getLastBuild().number}"
                                echo "Is building: ${job.isBuilding()}"
                         }
                   }
