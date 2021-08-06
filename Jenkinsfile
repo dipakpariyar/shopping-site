@@ -35,6 +35,8 @@ pipeline {
                                     ls
                                     cd ../jobs/Shopping_Site/builds
                                     ls
+                                    cd ''' +CURRENT_BUILD_NO+ '''
+                                    ls
                                    '''
                         }
                   }
