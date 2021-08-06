@@ -30,6 +30,7 @@ pipeline {
                                 echo "Last build Id last: ${CURRENT_BUILD_NO}"
                                 sh '''
                                     pwd
+                                    echo $CURRENT_BUILD_NO
                                     echo ''' +CURRENT_BUILD_NO+ '''
                                    '''
                         }
