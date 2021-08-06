@@ -30,14 +30,8 @@ pipeline {
                                 echo "Last build Id last: ${CURRENT_BUILD_NO}"
                                 sh '''
                                     echo ''' +CURRENT_BUILD_NO+ '''
-                                    cd ..
+                                    cd ../../jobs/Shopping_Site/builds/''' +CURRENT_BUILD_NO+ '''/archive
                                     pwd
-                                    ls
-                                    cd ../jobs/Shopping_Site/builds
-                                    ls
-                                    cd ''' +CURRENT_BUILD_NO+ '''
-                                    ls
-                                    cd archive
                                     ls
                                    '''
                         }
