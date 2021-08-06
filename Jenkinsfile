@@ -23,16 +23,16 @@ pipeline {
             }
             stage('Deploy Staging') {
                   steps {
-                        sh '''#!/bin/bash
-                              echo "===Deploy To Staging Env==="
-                        '''
                         script {
-                                env.CURRENT_BUILD_NO = Jenkins.instance.getItemByFullName('Shopping_Site').getLastBuild().number
-                                echo "Last build Id: ${emv.CURRENT_BUILD_NO}"
+                                def CURRENT_BUILD_NO = Jenkins.instance.getItemByFullName('Shopping_Site').getLastBuild().number
+                                def stageOneWorkSpace = "/path/test1"
+                                def stageTwoWorkSpace = "/path/test2"
+                                echo "Last build Id last: ${CURRENT_BUILD_NO}"
+                                sh '''
+                                    echo ''' +stageOneWorkSpace+ '''
+                                    echo ''' +stageTwoWorkSpace+ '''
+                                    '''
                                 
-                              sh '''#!/bin/bash
-                              echo $CURRENT_BUILD_NO
-                        '''
                         }
                   }
             }
