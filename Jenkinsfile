@@ -1,10 +1,14 @@
 pipeline {
       agent any
+      environment {
+       CURRENT_BUILD_NO = 10                               //can be used in whole pipeline
+      }
       stages {
             stage('Init') {
                   steps {
                         sh '''#!/bin/bash
                               echo "===Installing Dependencies==="
+                              echo $CURRENT_BUILD_NO
                               yarn install
                         '''
                   }
@@ -13,6 +17,7 @@ pipeline {
                   steps {
                         sh '''#!/bin/bash
                               echo "===Building Dependencies==="
+                              echo $CURRENT_BUILD_NO
                              yarn build
                         '''
                   }
