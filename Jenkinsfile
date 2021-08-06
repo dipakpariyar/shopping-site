@@ -25,12 +25,12 @@ pipeline {
                   steps {
                         script {
                                 def CURRENT_BUILD_NO = Jenkins.instance.getItemByFullName('Shopping_Site').getLastBuild().number
-                                def stageOneWorkSpace = "/path/test1"
+                                stageOneWorkSpace="/path/test1"
                                 def stageTwoWorkSpace = "/path/test2"
                                 echo "Last build Id last: ${CURRENT_BUILD_NO}"
                                 sh '''
                                     pwd
-                                    echo $CURRENT_BUILD_NO
+                                    echo $stageOneWorkSpace
                                     echo ''' +CURRENT_BUILD_NO+ '''
                                    '''
                         }
