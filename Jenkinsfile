@@ -29,7 +29,7 @@ pipeline {
                         script {
                                 lastBuildId = Jenkins.instance.getItemByFullName('Shopping_Site').getLastBuild().number
                                 echo "Last build Id: ${lastBuildId}"
-                                sh '$lastBuildId'
+                                sh 'echo $lastBuildId'
                         }
                   }
             }
