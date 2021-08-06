@@ -19,7 +19,12 @@ pipeline {
             }
             stage('Deploy Staging') {
                   steps {
-                        build job: 'Deploy_To_Staging_Env'
+                       
+                        script: {
+                              def currentBuildNo = echo Jenkins.instance.getItem('Shopping_Site').lastSuccessfulBuild.number
+                              echo "current shoping build no ${currentBuildNo}"
+                        }
+                        
                   }
             }
             stage('Deploy Production') {
