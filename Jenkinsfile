@@ -28,11 +28,9 @@ pipeline {
                         '''
                         script {
                                 lastBuildId = Jenkins.instance.getItemByFullName('Shopping_Site').getLastBuild().number
-                               echo "Last build Id: ${lastBuildId}"
+                                echo "Last build Id: ${lastBuildId}"
+                                sh 'pwd'
                         }
-                        sh '''#!/bin/bash
-                              echo "===Deploy To Staging Env final test ${lastBuildId}==="
-                        '''
                   }
             }
             stage('Deploy Production') {
