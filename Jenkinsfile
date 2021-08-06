@@ -29,6 +29,7 @@ pipeline {
                                 def stageTwoWorkSpace = "/path/test2"
                                 echo "Last build Id last: ${CURRENT_BUILD_NO}"
                                 sh '''
+                                    pwd
                                     echo ''' +CURRENT_BUILD_NO+ '''
                                    '''
                         }
