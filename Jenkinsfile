@@ -8,17 +8,14 @@ pipeline {
                   steps {
                         sh '''#!/bin/bash
                               echo "===Installing Dependencies==="
-                              echo $CURRENT_BUILD_NO
-                              yarn install
+                              yarn --version
+                              npm --version
                         '''
                   }
             }
             stage('Build') {
                   steps {
-                        sh '''#!/bin/bash
-                              echo "===Building Dependencies==="
-                              yarn build
-                        '''
+                       build job: 'Shopping_Site'
                   }
             }
             stage('Deploy Staging') {
