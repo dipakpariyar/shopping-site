@@ -17,10 +17,7 @@ pipeline {
                   steps {
                         sh '''#!/bin/bash
                               echo "===Building Dependencies==="
-                              echo $CURRENT_BUILD_NO
                               yarn build
-                              echo $BUILD_NUMBER
-                              CURRENT_BUILD_NO=$BUILD_NUMBER
                         '''
                   }
             }
@@ -28,10 +25,11 @@ pipeline {
                   steps {
                         sh '''#!/bin/bash
                               echo "===Deploy To Staging Env==="
-                              echo $CURRENT_BUILD_NO
-                              yarn build
-                             
                         '''
+                        script {
+                              def buildNumber = Jenkins.instance.getItem('Shopping_Site').lastSuccessfulBuild.number
+                              echo "current build number to deploy => ${buildNumber}"
+                        }
                   }
             }
             stage('Deploy Production') {
