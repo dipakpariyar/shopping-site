@@ -1,7 +1,7 @@
 pipeline {
       agent any
       environment {
-       CURRENT_BUILD_NO = 10                               //can be used in whole pipeline
+       CURRENT_BUILD_NO = 0                              //can be used in whole pipeline
       }
       stages {
             stage('Init') {
@@ -18,13 +18,19 @@ pipeline {
                         sh '''#!/bin/bash
                               echo "===Building Dependencies==="
                               echo $CURRENT_BUILD_NO
-                             yarn build
+                              yarn build
+                              CURRENT_BUILD_NO=$BUILD_NUMBER
                         '''
                   }
             }
             stage('Deploy Staging') {
                   steps {
-                        build job: 'Deploy_To_Staging_Env'
+                        sh '''#!/bin/bash
+                              echo "===Deploy To Staging Env==="
+                              echo $CURRENT_BUILD_NO
+                              yarn build
+                             
+                        '''
                   }
             }
             stage('Deploy Production') {
