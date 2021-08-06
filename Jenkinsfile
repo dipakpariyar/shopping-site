@@ -32,6 +32,9 @@ pipeline {
                                     echo ''' +CURRENT_BUILD_NO+ '''
                                     cd ..
                                     pwd
+                                    ls
+                                    cd ../jobs/Shopping_Site/builds
+                                    ls
                                    '''
                         }
                   }
