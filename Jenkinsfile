@@ -28,7 +28,6 @@ pipeline {
                         '''
                         script {
                                def buildName = Jenkins.instance.getItemByFullName('Shopping_Site')
-                               sh pwd
                                echo "Last build: ${buildName.getLastBuild().number}"
                         }
                   }
