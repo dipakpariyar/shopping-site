@@ -27,8 +27,8 @@ pipeline {
                               echo "===Deploy To Staging Env==="
                         '''
                         script {
-                               def buildName = Jenkins.instance.getItemByFullName('workspace/Shopping_Site')
-                               echo "Last success: ${buildName.getLastSuccessfulBuild()}"
+                               def buildName = Jenkins.instance.getItemByFullName('Shopping_Site')
+                               echo "Last success: ${buildName}"
                                echo "All builds: ${buildName.getBuilds().collect{ it.getNumber()}}"
                                echo "Last build: ${buildName.getLastBuild()}"
                                echo "Is building: ${job.isBuilding()}"
