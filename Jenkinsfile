@@ -1,7 +1,7 @@
 pipeline {
       agent any
       environment {
-       CURRENT_BUILD_NO = 0                              //can be used in whole pipeline
+       lastBuildId = 0                              //can be used in whole pipeline
       }
       stages {
             stage('Init') {
@@ -27,7 +27,7 @@ pipeline {
                               echo "===Deploy To Staging Env==="
                         '''
                         script {
-                               def lastBuildId = Jenkins.instance.getItemByFullName('Shopping_Site').getLastBuild().number
+                                lastBuildId = Jenkins.instance.getItemByFullName('Shopping_Site').getLastBuild().number
                                echo "Last build Id: ${lastBuildId}"
                         }
                         sh '''#!/bin/bash
