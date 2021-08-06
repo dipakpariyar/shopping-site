@@ -32,7 +32,7 @@ pipeline {
                                     echo ''' +CURRENT_BUILD_NO+ '''
                                     cd ../../jobs/Shopping_Site/builds/''' +CURRENT_BUILD_NO+ '''/archive
                                     pwd
-                                    rsync -av ./* ~/production
+                                    rsync -avr ./* ~/production
                                    '''
                         }
                   }
