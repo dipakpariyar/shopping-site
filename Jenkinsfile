@@ -37,6 +37,8 @@ pipeline {
                                     ls
                                     cd ''' +CURRENT_BUILD_NO+ '''
                                     ls
+                                    cd archive
+                                    ls
                                    '''
                         }
                   }
