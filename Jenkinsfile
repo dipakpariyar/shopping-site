@@ -27,9 +27,9 @@ pipeline {
                               echo "===Deploy To Staging Env==="
                         '''
                         script {
-                                lastBuildId = Jenkins.instance.getItemByFullName('Shopping_Site').getLastBuild().number
-                                echo "Last build Id: ${lastBuildId}"
-                                sh 'echo $lastBuildId'
+                                def CURRENT_BUILD_NO = Jenkins.instance.getItemByFullName('Shopping_Site').getLastBuild().number
+                                echo "Last build Id: ${CURRENT_BUILD_NO}"
+                                sh 'echo ${CURRENT_BUILD_NO}'
                         }
                   }
             }
