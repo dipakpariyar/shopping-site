@@ -1,14 +1,13 @@
 import React from 'react'
 import ReactImageMagnify from 'react-image-magnify';
 import Carousel from 'react-multi-carousel';
-import Collapse from '../collapsecomponent/index';
+// import Collapse from '../collapsecomponent/index';
 import Magnifycrousel from './magnifycrousel';
+// import ToastComponent from './Toast';
 
 // const url = '/assets/graphics/images/fan.jpg';
 
 export default class Test extends React.Component {
-
- 
 
 
   render() {
@@ -39,7 +38,9 @@ export default class Test extends React.Component {
         
       
     }} />
-    <Magnifycrousel />
+    {/* <Magnifycrousel /> */}
+  
+    
 
     </div> 
     

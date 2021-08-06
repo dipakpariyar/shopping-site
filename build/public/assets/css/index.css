@@ -255,7 +255,7 @@ body .home_div .footer_wrapper {
   }
 }
 .header_wrapper {
-  z-index: 1001;
+  z-index: 1002;
   position: fixed;
   top: 0;
   height: 16vh;
@@ -303,21 +303,27 @@ body .home_div .footer_wrapper {
   border-radius: 0.4rem;
   border: none;
 }
-.header_wrapper .header_div .card_div {
-  height: 15vh;
-  width: 20vw;
+.header_wrapper .header_div .cart_div {
+  height: 60px;
+  width: 20%;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-.header_wrapper .header_div .card_div .card1_div {
-  height: 5.5vh;
-  width: 20%;
-  margin-top: 2vh;
-}
-.header_wrapper .header_div .card_div .card1_div .card1_div__img {
+.header_wrapper .header_div .cart_div .cart1_div {
   height: 100%;
-  width: 100%;
+  width: 25%;
+  z-index: 1;
+  color: white;
+  font-size: 2rem;
+}
+.header_wrapper .header_div .cart_div .cart1_div .badge_div {
+  height: 10px;
+  width: 10px;
+  padding-left: 15px;
+  padding-top: 10px;
+  z-index: 5;
+  position: relative;
 }
 
 @media screen and (max-width: 360px) {
@@ -693,7 +699,7 @@ body .home_div .footer_wrapper {
   justify-content: center;
   width: 100%;
   margin-top: 16vh;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .main-container .container-wrapper {
   display: flex;
@@ -703,16 +709,10 @@ body .home_div .footer_wrapper {
   display: flex;
   width: 50%;
 }
-.main-container .container-wrapper .image-wrapper .image-slider {
-  height: 350px;
-  width: 20%;
-  margin: 2px;
-  background-color: #3EB489;
-}
 .main-container .container-wrapper .image-wrapper .image-div {
   height: 350px;
   margin: 2px;
-  width: 80%;
+  width: 90%;
 }
 .main-container .container-wrapper .image-wrapper .image-div .image {
   height: 100%;

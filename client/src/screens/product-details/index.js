@@ -8,9 +8,19 @@ import Specifications from './Specifications';
 import Overviews from './Overviews';
 import SimilarProduct from '../../common/similar-product/SimilarProduct';
 import Accordion from 'react-bootstrap/Accordion';
-import ImageMaginifier from '../collapsecomponent/index';
+import ImageMaginifier from '../imagemagnify/index';
+import ToastComponent from '../../common/toastcomponent/Toast';
 
 export default class index extends PureComponent {
+  constructor(props) {
+    super(props);
+    this.state = { showToast: false };
+  }
+
+  onAddToCartClickListner = () => {
+    this.setState({ showToast: !this.state.showToast })
+  }
+
   render() {
     // console.info('this product dteila props', Accordion)
     
@@ -55,8 +65,9 @@ export default class index extends PureComponent {
               {/* lower side container */}
               <div className="buying-wrapper">
                 <div className="add-buy-container">
-                  <button className="add-cart">ADD TO CART</button>
+                  <button onClick={this.onAddToCartClickListner} className="add-cart">ADD TO CART</button>
                   <button className="buy-now">BUY NOW</button>
+                  <ToastComponent onClose={this.onAddToCartClickListner} isShow={this.state.showToast} />
                 </div>
               </div>
             </div>
