@@ -31,7 +31,7 @@ pipeline {
                                 echo "Last build Id: ${CURRENT_BUILD_NO}"
                                 
                               sh '''#!/bin/bash
-                              echo "===Deploy To Staging Env===> $CURRENT_BUILD_NO"
+                              echo $CURRENT_BUILD_NO
                         '''
                         }
                   }
