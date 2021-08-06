@@ -31,7 +31,7 @@ pipeline {
                                 sh '''
                                     pwd
                                     echo $stageOneWorkSpace
-                                    echo ''' +CURRENT_BUILD_NO+ '''
+                                    echo ''' CURRENT_BUILD_NO '''
                                    '''
                         }
                   }
