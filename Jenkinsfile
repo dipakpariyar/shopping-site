@@ -19,6 +19,7 @@ pipeline {
                               echo "===Building Dependencies==="
                               echo $CURRENT_BUILD_NO
                               yarn build
+                              echo $BUILD_NUMBER
                               CURRENT_BUILD_NO=$BUILD_NUMBER
                         '''
                   }
