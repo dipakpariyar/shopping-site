@@ -8,17 +8,14 @@ pipeline {
                   steps {
                         sh '''#!/bin/bash
                               echo "===Installing Dependencies==="
-                              echo $CURRENT_BUILD_NO
-                              yarn install
+                              yarn --version
+                              npm --version
                         '''
                   }
             }
             stage('Build') {
                   steps {
-                        sh '''#!/bin/bash
-                              echo "===Building Dependencies==="
-                              yarn build
-                        '''
+                       build job: 'Shopping_Site'
                   }
             }
             stage('Deploy Staging') {
@@ -30,8 +27,9 @@ pipeline {
                                 echo "Last build Id last: ${CURRENT_BUILD_NO}"
                                 sh '''
                                     echo ''' +CURRENT_BUILD_NO+ '''
-                                    cd ..
+                                    cd ../../jobs/Shopping_Site/builds/''' +CURRENT_BUILD_NO+ '''/archive
                                     pwd
+                                    rsync -avr ./* ~/shopping_staging
                                    '''
                         }
                   }
