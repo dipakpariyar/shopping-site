@@ -16,6 +16,7 @@ RUN npm install --silent && \
     
 WORKDIR /opt/node_app/app
 COPY . .
+RUN npm install
 # CMD yarn dev:ssl
 # It's a workaround because we have raw path to node_modules in our application
 RUN chmod 777 start.sh
