@@ -29,7 +29,7 @@ pipeline {
                                     echo ''' +CURRENT_BUILD_NO+ '''
                                     cd ../../jobs/Shopping_Site/builds/''' +CURRENT_BUILD_NO+ '''/archive
                                     pwd
-                                    rsync -avr ./* ~/shopping_staging
+                                    rsync -avrze "ssh -i ~/ssh/aws_instance_key" ./* ubuntu@13.232.14.2:~/web-server/
                                    '''
                         }
                   }
