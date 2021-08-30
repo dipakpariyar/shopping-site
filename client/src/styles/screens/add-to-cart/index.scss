@@ -1,0 +1,205 @@
+.main_container{
+.checkout_container{
+  display: flex;
+  justify-content: center;
+  margin-top: 16vh;
+  width: 100%;
+  // border: 1px solid red;
+  .cart_price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 70px;
+    width: 90%;
+    margin:15px 0 15px 0 ;
+    border-radius: 0.5rem;
+    box-shadow:0 0 4px 1px #666;
+    // border: 1px solid blue;
+    .price_wrapper{
+      display: flex;
+      margin-right: 5%;
+      // border: 1px solid rgb(31, 201, 25);
+      .name{
+        font-size: 1.5rem;
+        // line-height: 2.6rem;
+        display: flex;
+        align-items: center;
+        font-family: "PT Serif",serif;
+        font-weight: 500;
+        color: #333;
+
+        .small{
+          font-size: 0.9rem;
+          margin-left: 1rem;
+          font-family: "Nunito",sans-serif;
+          margin-top: 5px;
+          color: #666;
+        }
+      }
+      .cp_price{
+        display: flex;
+        align-items: center;
+        margin-left: 2rem;
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: #333;
+      }
+     
+    
+    }
+    .act_button{
+       margin-left: 5%;
+      .ch_btn{
+        height: 35px;
+        width: 140px;
+        border-radius: 0.5rem;
+        font-size: 1.1rem;
+        font-weight: 500;
+        border: none;
+        outline: none;
+        background-color: #FFDB58;
+      }
+    }
+  }
+}
+
+.pro_payment_container{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 50px;
+  width: 100%;
+  // border: 1px solid black;
+  .pp_wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    // border: 1px solid green;
+    .product_wrap{
+      height: 100%;
+      width: 63%;
+      // position: relative;
+      // border: 1px solid red;
+      // border-radius: 0.5rem;
+      // box-shadow:0 0 4px 1px #666;
+    }
+    
+    //payment info
+
+    .payment_wrapper{
+      height: 47vh;
+      width: 36%;
+      padding: 2rem;
+      border-radius: 0.5rem;
+      box-shadow:0 0 4px 1px #666;
+      // border: 1px solid rgb(255, 51, 0);
+      
+      .payment_box{
+      
+        // border: 1px solid orangered;
+        .payment_title{
+          font-size: 1.7rem;
+          margin-bottom: 0.5rem;
+          font-family: "PT Serif",serif;
+          font-weight: 400;
+          color: #333;
+          // border: 1px solid aqua;
+        }
+        .payment_summary{
+          display: flex;
+          flex-direction: column;
+          color: #666;
+          .lr_items{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            .r_items{
+              font-size: 1.1rem;
+              font-weight: 600;
+              color: #333;
+            }
+          }
+          .lr_total{
+            display: flex;
+            justify-content: space-between;
+            .l_total{
+              font-size: 1rem;
+              font-weight: 600;
+              color: #333;
+            }
+            .r_total{
+              font-size: 1.1rem;
+              font-weight: 600;
+              color: #333;
+            }
+
+          }
+       
+        }
+
+        .chk_out{
+          display: flex;
+          justify-content: center;
+          margin-top: 25px;
+          margin-bottom: 20px;
+          .chk_btn{
+            height: 35px;
+            width: 140px;
+            border-radius: 0.4rem;
+            font-size: 1.1rem;
+            font-weight: 500;
+            border: none;
+            outline: none;
+            background-color: #FFDB58;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+}
+@media screen and (min-width:320px) and (max-width:480px){
+  .main_container .checkout_container .cart_price{
+    width: 95%;
+  }
+ 
+  .main_container .checkout_container .cart_price .price_wrapper{
+    display: block;
+  }
+  .main_container .checkout_container .cart_price .price_wrapper .name{
+    font-size: 1.3rem;
+  }
+  .main_container .checkout_container .cart_price .price_wrapper .cp_price{
+    margin-left: 0;
+    font-size: 1.3rem;
+  }
+ 
+  .main_container .checkout_container .cart_price .act_button{
+    margin-left: 0;
+  }
+
+  
+// middle part
+  .main_container .pro_payment_container{
+    margin-top: 0;
+  }
+  .main_container .pro_payment_container .pp_wrapper .product_wrap{
+    width: 100%;
+
+  }
+
+
+  .main_container .pro_payment_container .pp_wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+  }
+  
+  .main_container .pro_payment_container .pp_wrapper .payment_wrapper{
+    width: 100%;
+    margin-top: 15px;
+  }
+}

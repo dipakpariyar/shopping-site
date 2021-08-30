@@ -1,5 +1,7 @@
 import React from 'react'
 import { DropdownButton, Dropdown } from 'react-bootstrap';
+import {CgShoppingCart} from 'react-icons/cg';
+import Badge from 'react-bootstrap/Badge';
 // import Cart from '../../icons/cart.png';
 // import Home from '../../icons/home.jpg';
 export default function Header() {
@@ -25,29 +27,15 @@ export default function Header() {
           </DropdownButton>
           </div>
       </form>
-      <div className="card_div">
+      <div className="cart_div">
 
-        <div className="card1_div">
-          {/* <img src={Cart} className="card1_div__img" alt="" /> */}
+        <div className="cart1_div">
+            <div className="badge_div">
+              <h6 ><Badge text="dark" pill bg="light">0</Badge></h6>
+            </div>
+            <div style={{zIndex:"0"}}><CgShoppingCart /></div>
+          
         </div>
-
-        {/* <div className="card2_div">
-          <div className="g_div">
-            <img src={Google} className="g_div__icon" alt="" />
-          </div>
-
-          <div className="tw_div">
-            <img src={Tw} className="tw_div__icon" alt="twitter_logo" />
-          </div>
-
-          <div className="insta_div">
-            <img src={Insta} className="insta_div__icon" alt="" />
-          </div>
-          <div className="fb_div">
-            <img src={Fb} className="fb_div__icon" alt="" />
-          </div>
-
-        </div> */}
       </div>
     </div>
     </div>

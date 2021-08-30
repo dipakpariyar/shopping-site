@@ -21,10 +21,10 @@ export default function Cardimg(props) {
       halfMobileSize=0;
       break;
     case 'magnifyImage':
-      cards = data.map((d, idx) => <div onClick={() => onCLickListner(idx)} style={{ height: 200, width: 200}}><img src={d} style={{ height: '100%', width: '100' }}/></div>);
+      cards = data.map((d, idx) => <div onClick={() => onCLickListner(idx)} style={{ height: 75, width: 100,}}><img src={d} style={{ height: '100%', width: '100%' }}/></div>);
       customItem = 4;
       halfItem = 20;
-      mobileItem=2;
+      mobileItem=3;
       halfMobileSize=0;
       break;
     default:
@@ -34,6 +34,9 @@ export default function Cardimg(props) {
       mobileItem=1;
       halfMobileSize=45;
   }
+
+
+  
 
   const responsive = {
     superLargeDesktop: {
@@ -45,7 +48,9 @@ export default function Cardimg(props) {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
       items: customItem, 
-      partialVisibilityGutter: halfItem
+      partialVisibilityGutter: halfItem,
+      
+      
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
@@ -62,7 +67,8 @@ export default function Cardimg(props) {
 
   return (
     <div className="card-main-div">
-      <Carousel ssr responsive={responsive} partialVisbile> 
+      <Carousel  ssr responsive={responsive} partialVisbile  > 
+      
         {cards}
       </Carousel>
     </div>
