@@ -29,7 +29,7 @@ pipeline {
                                     echo ''' +CURRENT_BUILD_NO+ '''
                                     cd ../../jobs/Shopping_Site/builds/''' +CURRENT_BUILD_NO+ '''/archive
                                     pwd
-                                    rsync -avrze "ssh -p 22 -o StrictHostKeyChecking=no -i ~/ssh/aws_instance_key" ./* ubuntu@35.154.31.195:~/data/shopping-site/
+                                    rsync -avrze --no-o --no-g "ssh -p 22 -o StrictHostKeyChecking=no -i ~/ssh/aws_instance_key" ./* ubuntu@35.154.31.195:~/data/shopping-site/
                                    '''
                         }
                   }
