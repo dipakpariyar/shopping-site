@@ -1,2 +1,2 @@
-// export const ENDPOINT = 'https://sawarikinbech.com';
-export const ENDPOINT = 'http://localhost:4003';
+export const ENDPOINT = 'http://bikekinbech.com';
+// export const ENDPOINT = 'http://localhost:3000';
